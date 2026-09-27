@@ -1,0 +1,1764 @@
+{
+ "seeds": {
+  "0": {
+   "threshold_prob": 0.016363643470142162,
+   "n_terms": 386,
+   "n_nonzero_scorecard": 113,
+   "rules": [
+    {
+     "rule": 4,
+     "beta": 0.3776776194572449,
+     "mean_fire": 0.04914333298802376,
+     "importance": 0.018560336902737617,
+     "antecedents": [
+      [
+       "BUN is HIGH (rising)",
+       2.6726717948913574
+      ],
+      [
+       "WBC recently measured",
+       1.124121904373169
+      ],
+      [
+       "WBC is HIGH (rising)",
+       0.008048523217439651
+      ]
+     ]
+    },
+    {
+     "rule": 12,
+     "beta": 0.5411691665649414,
+     "mean_fire": 0.020271996036171913,
+     "importance": 0.010970579460263252,
+     "antecedents": [
+      [
+       "EtCO2 recently measured",
+       2.481771469116211
+      ],
+      [
+       "Temp is NORMAL (rising)",
+       1.7109423875808716
+      ],
+      [
+       "SBP frequently measured",
+       0.0025703993160277605
+      ]
+     ]
+    },
+    {
+     "rule": 17,
+     "beta": 0.33184561133384705,
+     "mean_fire": 0.017803743481636047,
+     "importance": 0.005908094346523285,
+     "antecedents": [
+      [
+       "BUN is HIGH (rising)",
+       2.2941834926605225
+      ],
+      [
+       "TroponinI is HIGH (rising)",
+       1.8827720880508423
+      ],
+      [
+       "WBC is HIGH (rising)",
+       0.0034933278802782297
+      ]
+     ]
+    },
+    {
+     "rule": 19,
+     "beta": 0.15844181180000305,
+     "mean_fire": 0.020565876737236977,
+     "importance": 0.003258494660258293,
+     "antecedents": [
+      [
+       "Temp is HIGH (rising)",
+       2.321765422821045
+      ],
+      [
+       "SaO2 is LOW (sustained)",
+       1.9988075494766235
+      ],
+      [
+       "WBC is LOW (rising)",
+       0.003991521429270506
+      ]
+     ]
+    },
+    {
+     "rule": 18,
+     "beta": -0.0132447499781847,
+     "mean_fire": 0.03177006542682648,
+     "importance": 0.0004207865858916193,
+     "antecedents": [
+      [
+       "Bilirubin_direct is HIGH (now)",
+       1.6231166124343872
+      ],
+      [
+       "Bilirubin_total is NORMAL (now)",
+       0.6102457642555237
+      ],
+      [
+       "Bilirubin_direct frequently measured",
+       0.02103825844824314
+      ]
+     ]
+    },
+    {
+     "rule": 21,
+     "beta": -0.013771383091807365,
+     "mean_fire": 0.02784840203821659,
+     "importance": 0.0003835110110230744,
+     "antecedents": [
+      [
+       "HCO3 is LOW (sustained)",
+       1.4895074367523193
+      ],
+      [
+       "Temp is LOW (now)",
+       0.8821434378623962
+      ],
+      [
+       "Bilirubin_direct frequently measured",
+       0.018788155168294907
+      ]
+     ]
+    },
+    {
+     "rule": 2,
+     "beta": -0.010560456663370132,
+     "mean_fire": 0.03201082721352577,
+     "importance": 0.0003380489652045071,
+     "antecedents": [
+      [
+       "EtCO2 is HIGH (sustained)",
+       1.4019498825073242
+      ],
+      [
+       "Platelets is HIGH (now)",
+       1.0576361417770386
+      ],
+      [
+       "Bilirubin_direct frequently measured",
+       0.018617261201143265
+      ]
+     ]
+    },
+    {
+     "rule": 22,
+     "beta": -0.008951742202043533,
+     "mean_fire": 0.030125264078378677,
+     "importance": 0.0002696735900826752,
+     "antecedents": [
+      [
+       "HCO3 is HIGH (sustained)",
+       1.2433053255081177
+      ],
+      [
+       "SBP is HIGH (sustained)",
+       1.096823811531067
+      ],
+      [
+       "HCO3 frequently measured",
+       0.02115587890148163
+      ]
+     ]
+    },
+    {
+     "rule": 11,
+     "beta": -0.0070297145284712315,
+     "mean_fire": 0.03079918771982193,
+     "importance": 0.0002165094920201227,
+     "antecedents": [
+      [
+       "Magnesium is LOW (sustained)",
+       1.2828775644302368
+      ],
+      [
+       "Alkalinephos is LOW (sustained)",
+       0.9836969375610352
+      ],
+      [
+       "Bilirubin_direct frequently measured",
+       0.022033773362636566
+      ]
+     ]
+    },
+    {
+     "rule": 15,
+     "beta": -0.007077145855873823,
+     "mean_fire": 0.029890161007642746,
+     "importance": 0.0002115370298270136,
+     "antecedents": [
+      [
+       "BaseExcess is HIGH (now)",
+       1.2821547985076904
+      ],
+      [
+       "Magnesium is LOW (now)",
+       1.1869373321533203
+      ],
+      [
+       "Bilirubin_direct frequently measured",
+       0.019693616777658463
+      ]
+     ]
+    }
+   ],
+   "scorecard": [
+    {
+     "term": "ICULOS is HIGH",
+     "weight": -1.1233882904052734,
+     "mean_membership": 0.7001664042472839,
+     "importance": 0.7865587472915649
+    },
+    {
+     "term": "HospAdmTime is LOW",
+     "weight": -0.8925018906593323,
+     "mean_membership": 0.7439640760421753,
+     "importance": 0.6639893651008606
+    },
+    {
+     "term": "Temp is NORMAL (sustained)",
+     "weight": -0.35217124223709106,
+     "mean_membership": 0.6420162320137024,
+     "importance": 0.2260996550321579
+    },
+    {
+     "term": "Temp frequently measured",
+     "weight": -0.7186789512634277,
+     "mean_membership": 0.30708786845207214,
+     "importance": 0.2206975817680359
+    },
+    {
+     "term": "Temp is NORMAL (now)",
+     "weight": -0.21403279900550842,
+     "mean_membership": 0.6946955323219299,
+     "importance": 0.14868763089179993
+    },
+    {
+     "term": "WBC is NORMAL (now)",
+     "weight": -0.25748324394226074,
+     "mean_membership": 0.48220542073249817,
+     "importance": 0.1241598129272461
+    },
+    {
+     "term": "BUN is HIGH (rising)",
+     "weight": 0.7966209650039673,
+     "mean_membership": 0.12090328335762024,
+     "importance": 0.09631408751010895
+    },
+    {
+     "term": "HR is HIGH (now)",
+     "weight": 0.3383964002132416,
+     "mean_membership": 0.27514252066612244,
+     "importance": 0.09310723841190338
+    },
+    {
+     "term": "HR is LOW (now)",
+     "weight": -0.2721603214740753,
+     "mean_membership": 0.33615759015083313,
+     "importance": 0.09148875623941422
+    },
+    {
+     "term": "BUN is HIGH (now)",
+     "weight": 0.31757137179374695,
+     "mean_membership": 0.28215718269348145,
+     "importance": 0.08960504084825516
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.4169885218143463,
+     "mean_membership": 0.2000247687101364,
+     "importance": 0.08340803533792496
+    },
+    {
+     "term": "Bilirubin_total is NORMAL (now)",
+     "weight": -0.1989423781633377,
+     "mean_membership": 0.3936152160167694,
+     "importance": 0.07830674946308136
+    },
+    {
+     "term": "ICULOS is NORMAL",
+     "weight": 0.8159743547439575,
+     "mean_membership": 0.08721491694450378,
+     "importance": 0.07116513699293137
+    },
+    {
+     "term": "Temp is HIGH (now)",
+     "weight": 0.5587282180786133,
+     "mean_membership": 0.12680642306804657,
+     "importance": 0.07085032761096954
+    },
+    {
+     "term": "Resp is HIGH (now)",
+     "weight": 0.270202100276947,
+     "mean_membership": 0.2381763756275177,
+     "importance": 0.0643557533621788
+    },
+    {
+     "term": "EtCO2 recently measured",
+     "weight": 0.8510779142379761,
+     "mean_membership": 0.07440751045942307,
+     "importance": 0.06332658976316452
+    },
+    {
+     "term": "WBC is HIGH (rising)",
+     "weight": 0.40511709451675415,
+     "mean_membership": 0.15073540806770325,
+     "importance": 0.061065491288900375
+    },
+    {
+     "term": "Resp frequently measured",
+     "weight": -0.08740488439798355,
+     "mean_membership": 0.6305919885635376,
+     "importance": 0.05511682108044624
+    },
+    {
+     "term": "Resp is HIGH (sustained)",
+     "weight": 0.20548978447914124,
+     "mean_membership": 0.26682737469673157,
+     "importance": 0.05483030155301094
+    },
+    {
+     "term": "Lactate is HIGH (now)",
+     "weight": -0.19150309264659882,
+     "mean_membership": 0.28273850679397583,
+     "importance": 0.05414529889822006
+    }
+   ],
+   "fidelity": {
+    "full": {
+     "src_test": {
+      "auroc": 0.8263186323210351,
+      "utility": 0.331032733323863
+     },
+     "tgt_test": {
+      "auroc": 0.7669282801180004,
+      "utility": 0.31866706837896536
+     }
+    },
+    "rules_top1": {
+     "src_test": {
+      "auroc": 0.8276247430397724,
+      "utility": 0.3086957404062747
+     },
+     "tgt_test": {
+      "auroc": 0.7660817496985044,
+      "utility": 0.30364679446139164
+     }
+    },
+    "rules_top2": {
+     "src_test": {
+      "auroc": 0.8269263165482623,
+      "utility": 0.3292489396675934
+     },
+     "tgt_test": {
+      "auroc": 0.7667337755177606,
+      "utility": 0.31634090309946145
+     }
+    },
+    "rules_top3": {
+     "src_test": {
+      "auroc": 0.8269188288155297,
+      "utility": 0.32921241146985414
+     },
+     "tgt_test": {
+      "auroc": 0.7667324028178305,
+      "utility": 0.3160785347543906
+     }
+    },
+    "rules_top5": {
+     "src_test": {
+      "auroc": 0.8269041552312977,
+      "utility": 0.3293950524585506
+     },
+     "tgt_test": {
+      "auroc": 0.766735631820208,
+      "utility": 0.31633964774852813
+     }
+    },
+    "rules_top3_scorecard20": {
+     "src_test": {
+      "auroc": 0.8076670916938802,
+      "utility": 0.2985754002881669
+     },
+     "tgt_test": {
+      "auroc": 0.7497973190272962,
+      "utility": 0.29588244893860083
+     }
+    },
+    "rules_top3_scorecard50": {
+     "src_test": {
+      "auroc": 0.8241236996951042,
+      "utility": 0.2745601396188891
+     },
+     "tgt_test": {
+      "auroc": 0.7634780204483763,
+      "utility": 0.2729095268582332
+     }
+    }
+   },
+   "shift_decomposition": {
+    "actual_mean_logit_change": 0.7286338806152344,
+    "scorecard_total": 0.7304617762565613,
+    "rules_total": -0.0018273601308465004,
+    "top_terms": [
+     {
+      "term": "BaseExcess recently measured",
+      "weight": 0.7599375247955322,
+      "mean_src": 0.011901343241333961,
+      "mean_tgt": 0.48239147663116455,
+      "contribution": 0.35754311084747314
+     },
+     {
+      "term": "HCO3 recently measured",
+      "weight": -0.43357449769973755,
+      "mean_src": 0.011493452824652195,
+      "mean_tgt": 0.7307131290435791,
+      "contribution": -0.31183531880378723
+     },
+     {
+      "term": "HospAdmTime is LOW",
+      "weight": -0.8925018906593323,
+      "mean_src": 0.7439640760421753,
+      "mean_tgt": 0.6055100560188293,
+      "contribution": 0.12357047200202942
+     },
+     {
+      "term": "PTT recently measured",
+      "weight": 0.29027608036994934,
+      "mean_src": 0.16422808170318604,
+      "mean_tgt": 0.5786925554275513,
+      "contribution": 0.12030912190675735
+     },
+     {
+      "term": "FiO2 recently measured",
+      "weight": 0.2519032657146454,
+      "mean_src": 0.12530936300754547,
+      "mean_tgt": 0.4205925464630127,
+      "contribution": 0.07438280433416367
+     },
+     {
+      "term": "FiO2 is HIGH (rising)",
+      "weight": 0.4917716979980469,
+      "mean_src": 0.08924549072980881,
+      "mean_tgt": 0.23105433583259583,
+      "contribution": 0.06973757594823837
+     },
+     {
+      "term": "EtCO2 recently measured",
+      "weight": 0.8510779142379761,
+      "mean_src": 0.07440751045942307,
+      "mean_tgt": 0.0,
+      "contribution": -0.06332658976316452
+     },
+     {
+      "term": "pH recently measured",
+      "weight": 0.16939614713191986,
+      "mean_src": 0.1162642166018486,
+      "mean_tgt": 0.3944227397441864,
+      "contribution": 0.047118980437517166
+     },
+     {
+      "term": "pH is HIGH (rising)",
+      "weight": 0.7049814462661743,
+      "mean_src": 0.07414688169956207,
+      "mean_tgt": 0.140556201338768,
+      "contribution": 0.046817339956760406
+     },
+     {
+      "term": "PaCO2 recently measured",
+      "weight": 0.1937144249677658,
+      "mean_src": 0.10251361131668091,
+      "mean_tgt": 0.32635343074798584,
+      "contribution": 0.04336100071668625
+     },
+     {
+      "term": "SaO2 recently measured",
+      "weight": 0.47185957431793213,
+      "mean_src": 0.09892819076776505,
+      "mean_tgt": 0.19016039371490479,
+      "contribution": 0.043048787862062454
+     },
+     {
+      "term": "Glucose frequently measured",
+      "weight": -0.4169885218143463,
+      "mean_src": 0.2000247687101364,
+      "mean_tgt": 0.11368554085493088,
+      "contribution": 0.036002468317747116
+     },
+     {
+      "term": "WBC is HIGH (rising)",
+      "weight": 0.40511709451675415,
+      "mean_src": 0.15073540806770325,
+      "mean_tgt": 0.2179560512304306,
+      "contribution": 0.027232231572270393
+     },
+     {
+      "term": "MAP is LOW (rising)",
+      "weight": 0.2705113887786865,
+      "mean_src": 0.07577698677778244,
+      "mean_tgt": 0.17041562497615814,
+      "contribution": 0.02560083009302616
+     },
+     {
+      "term": "Temp is HIGH (now)",
+      "weight": 0.5587282180786133,
+      "mean_src": 0.12680642306804657,
+      "mean_tgt": 0.1725781261920929,
+      "contribution": 0.025573942810297012
+     }
+    ]
+   },
+   "halflife_h": {
+    "HR": 5.67828369140625,
+    "O2Sat": 0.1516498327255249,
+    "Temp": 10.15403938293457,
+    "SBP": 0.6065301895141602,
+    "MAP": 0.20284992456436157,
+    "DBP": 0.15424209833145142,
+    "Resp": 3.1172027587890625,
+    "EtCO2": 1.227386236190796,
+    "BaseExcess": 20.837793350219727,
+    "HCO3": 37.884803771972656,
+    "FiO2": 7.732989311218262,
+    "pH": 7.280301570892334,
+    "PaCO2": 5.795207500457764,
+    "SaO2": 7.360548973083496,
+    "AST": 23.537185668945312,
+    "BUN": 11.020515441894531,
+    "Alkalinephos": 17.924049377441406,
+    "Calcium": 0.5264224410057068,
+    "Chloride": 2.1756505966186523,
+    "Creatinine": 0.4866768419742584,
+    "Bilirubin_direct": 284.2386779785156,
+    "Glucose": 0.31638509035110474,
+    "Lactate": 6.739576816558838,
+    "Magnesium": 0.32623380422592163,
+    "Phosphate": 1.07763671875,
+    "Potassium": 0.2721172571182251,
+    "Bilirubin_total": 21.136608123779297,
+    "TroponinI": 3.7787740230560303,
+    "Hct": 0.3055640459060669,
+    "Hgb": 0.2782920002937317,
+    "PTT": 50.81590270996094,
+    "WBC": 11.286892890930176,
+    "Fibrinogen": 10.125213623046875,
+    "Platelets": 0.27241140604019165
+   },
+   "halflife_init_h": {
+    "HR": 2.211470365524292,
+    "O2Sat": 2.260338068008423,
+    "Temp": 5.4508771896362305,
+    "SBP": 2.2534050941467285,
+    "MAP": 2.2586910724639893,
+    "DBP": 2.2540791034698486,
+    "Resp": 2.431431770324707,
+    "EtCO2": 4.552613258361816,
+    "BaseExcess": 23.917381286621094,
+    "HCO3": 21.85207176208496,
+    "FiO2": 25.0732479095459,
+    "pH": 25.042757034301758,
+    "PaCO2": 25.08099937438965,
+    "SaO2": 25.981937408447266,
+    "AST": 41.58974838256836,
+    "BUN": 27.080135345458984,
+    "Alkalinephos": 41.461753845214844,
+    "Calcium": 22.545883178710938,
+    "Chloride": 26.564228057861328,
+    "Creatinine": 27.060901641845703,
+    "Bilirubin_direct": 58.17230224609375,
+    "Glucose": 7.613027572631836,
+    "Lactate": 24.7646427154541,
+    "Magnesium": 27.773094177246094,
+    "Phosphate": 32.087860107421875,
+    "Potassium": 20.20635414123535,
+    "Bilirubin_total": 41.381927490234375,
+    "TroponinI": 31.217605590820312,
+    "Hct": 25.266868591308594,
+    "Hgb": 25.081485748291016,
+    "PTT": 44.23390579223633,
+    "WBC": 27.650737762451172,
+    "Fibrinogen": 34.6757926940918,
+    "Platelets": 27.32341957092285
+   }
+  },
+  "1": {
+   "threshold_prob": 0.03073289680285242,
+   "n_terms": 386,
+   "n_nonzero_scorecard": 101,
+   "rules": [
+    {
+     "rule": 20,
+     "beta": -0.06233147531747818,
+     "mean_fire": 0.021048016846179962,
+     "importance": 0.0013119539944455028,
+     "antecedents": [
+      [
+       "Fibrinogen recently measured",
+       1.8843327760696411
+      ],
+      [
+       "EtCO2 is LOW (now)",
+       1.5962598323822021
+      ],
+      [
+       "Chloride recently measured",
+       0.007598150055855513
+      ]
+     ]
+    },
+    {
+     "rule": 2,
+     "beta": -0.02285325713455677,
+     "mean_fire": 0.020623868331313133,
+     "importance": 0.0004713225644081831,
+     "antecedents": [
+      [
+       "Hgb is NORMAL (rising)",
+       2.307934522628784
+      ],
+      [
+       "Glucose frequently measured",
+       1.4906189441680908
+      ],
+      [
+       "HCO3 frequently measured",
+       0.003452089847996831
+      ]
+     ]
+    },
+    {
+     "rule": 8,
+     "beta": -0.008345454931259155,
+     "mean_fire": 0.024313369765877724,
+     "importance": 0.00020290612883400172,
+     "antecedents": [
+      [
+       "Hct is HIGH (sustained)",
+       1.5405408143997192
+      ],
+      [
+       "Lactate is HIGH (now)",
+       1.1060092449188232
+      ],
+      [
+       "HCO3 frequently measured",
+       0.019010307267308235
+      ]
+     ]
+    },
+    {
+     "rule": 0,
+     "beta": 0.005468398332595825,
+     "mean_fire": 0.02355656772851944,
+     "importance": 0.0001288166968151927,
+     "antecedents": [
+      [
+       "Hgb is LOW (now)",
+       1.6075016260147095
+      ],
+      [
+       "Bilirubin_total is NORMAL (now)",
+       1.0509649515151978
+      ],
+      [
+       "Bilirubin_direct frequently measured",
+       0.01888286881148815
+      ]
+     ]
+    },
+    {
+     "rule": 13,
+     "beta": -0.0050500305369496346,
+     "mean_fire": 0.02387436293065548,
+     "importance": 0.00012056626292178407,
+     "antecedents": [
+      [
+       "Magnesium is HIGH (now)",
+       1.231105089187622
+      ],
+      [
+       "EtCO2 is LOW (now)",
+       1.0827664136886597
+      ],
+      [
+       "HCO3 frequently measured",
+       0.023785365745425224
+      ]
+     ]
+    },
+    {
+     "rule": 12,
+     "beta": -0.0043189870193600655,
+     "mean_fire": 0.023302963003516197,
+     "importance": 0.00010064519301522523,
+     "antecedents": [
+      [
+       "Glucose is NORMAL (rising)",
+       2.8324387073516846
+      ],
+      [
+       "Resp frequently measured",
+       0.5284293293952942
+      ],
+      [
+       "HCO3 frequently measured",
+       0.006477620918303728
+      ]
+     ]
+    },
+    {
+     "rule": 19,
+     "beta": 0.004464346449822187,
+     "mean_fire": 0.022387823089957237,
+     "importance": 9.99469993985258e-05,
+     "antecedents": [
+      [
+       "Potassium is HIGH (sustained)",
+       2.10788631439209
+      ],
+      [
+       "HospAdmTime is HIGH",
+       0.21318303048610687
+      ],
+      [
+       "HCO3 frequently measured",
+       0.019471770152449608
+      ]
+     ]
+    },
+    {
+     "rule": 22,
+     "beta": -0.0038782970514148474,
+     "mean_fire": 0.02321433089673519,
+     "importance": 9.003207378555089e-05,
+     "antecedents": [
+      [
+       "Glucose frequently measured",
+       2.0038375854492188
+      ],
+      [
+       "WBC is LOW (now)",
+       1.571812391281128
+      ],
+      [
+       "HCO3 frequently measured",
+       0.007008254062384367
+      ]
+     ]
+    },
+    {
+     "rule": 10,
+     "beta": -0.0038528237491846085,
+     "mean_fire": 0.02144155651330948,
+     "importance": 8.261053881142288e-05,
+     "antecedents": [
+      [
+       "TroponinI is NORMAL (rising)",
+       2.9474871158599854
+      ],
+      [
+       "WBC is LOW (sustained)",
+       0.456015408039093
+      ],
+      [
+       "HCO3 frequently measured",
+       0.0074727279134094715
+      ]
+     ]
+    },
+    {
+     "rule": 18,
+     "beta": -0.002858981490135193,
+     "mean_fire": 0.02345466800034046,
+     "importance": 6.705646228510886e-05,
+     "antecedents": [
+      [
+       "pH is NORMAL (sustained)",
+       0.9211204051971436
+      ],
+      [
+       "AST is LOW (now)",
+       0.6098440289497375
+      ],
+      [
+       "HCO3 frequently measured",
+       0.03514818102121353
+      ]
+     ]
+    }
+   ],
+   "scorecard": [
+    {
+     "term": "ICULOS is NORMAL",
+     "weight": -1.0692147016525269,
+     "mean_membership": 0.6839007139205933,
+     "importance": 0.7312366962432861
+    },
+    {
+     "term": "HospAdmTime is NORMAL",
+     "weight": -0.8773043155670166,
+     "mean_membership": 0.4783962368965149,
+     "importance": 0.4196990728378296
+    },
+    {
+     "term": "Temp frequently measured",
+     "weight": -0.7758005261421204,
+     "mean_membership": 0.3031836152076721,
+     "importance": 0.23521000146865845
+    },
+    {
+     "term": "WBC is NORMAL (now)",
+     "weight": -0.3955042362213135,
+     "mean_membership": 0.5484015345573425,
+     "importance": 0.21689513325691223
+    },
+    {
+     "term": "Temp is NORMAL (now)",
+     "weight": -0.3021308481693268,
+     "mean_membership": 0.3986303508281708,
+     "importance": 0.12043852359056473
+    },
+    {
+     "term": "HR is HIGH (now)",
+     "weight": 0.4046483337879181,
+     "mean_membership": 0.2777610123157501,
+     "importance": 0.11239553242921829
+    },
+    {
+     "term": "Bilirubin_total is LOW (now)",
+     "weight": -0.2809447944164276,
+     "mean_membership": 0.39774706959724426,
+     "importance": 0.1117449700832367
+    },
+    {
+     "term": "BUN is HIGH (rising)",
+     "weight": 0.9105777144432068,
+     "mean_membership": 0.12177961319684982,
+     "importance": 0.11088979989290237
+    },
+    {
+     "term": "HospAdmTime is HIGH",
+     "weight": 0.3708552420139313,
+     "mean_membership": 0.29567015171051025,
+     "importance": 0.10965082794427872
+    },
+    {
+     "term": "HR is LOW (now)",
+     "weight": -0.3440815210342407,
+     "mean_membership": 0.3025919198989868,
+     "importance": 0.104116290807724
+    },
+    {
+     "term": "ICULOS is HIGH",
+     "weight": 0.9703879356384277,
+     "mean_membership": 0.09817302227020264,
+     "importance": 0.09526591747999191
+    },
+    {
+     "term": "HospAdmTime is LOW",
+     "weight": -0.5119209289550781,
+     "mean_membership": 0.18014298379421234,
+     "importance": 0.09221896529197693
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.45996829867362976,
+     "mean_membership": 0.19987225532531738,
+     "importance": 0.09193490445613861
+    },
+    {
+     "term": "Temp is NORMAL (sustained)",
+     "weight": -0.23395605385303497,
+     "mean_membership": 0.38535284996032715,
+     "importance": 0.09015563130378723
+    },
+    {
+     "term": "BUN is HIGH (now)",
+     "weight": 0.29712656140327454,
+     "mean_membership": 0.3009975254535675,
+     "importance": 0.08943436294794083
+    },
+    {
+     "term": "Resp frequently measured",
+     "weight": -0.1463683545589447,
+     "mean_membership": 0.6006538271903992,
+     "importance": 0.08791670948266983
+    },
+    {
+     "term": "EtCO2 recently measured",
+     "weight": 0.8890718817710876,
+     "mean_membership": 0.07417680323123932,
+     "importance": 0.06594850867986679
+    },
+    {
+     "term": "Resp is HIGH (now)",
+     "weight": 0.26518678665161133,
+     "mean_membership": 0.24333840608596802,
+     "importance": 0.06453012675046921
+    },
+    {
+     "term": "pH is HIGH (rising)",
+     "weight": 0.6882882118225098,
+     "mean_membership": 0.09299778193235397,
+     "importance": 0.06400927901268005
+    },
+    {
+     "term": "SaO2 recently measured",
+     "weight": 0.523557722568512,
+     "mean_membership": 0.0998205840587616,
+     "importance": 0.0522618368268013
+    }
+   ],
+   "fidelity": {
+    "full": {
+     "src_test": {
+      "auroc": 0.8197568582780169,
+      "utility": 0.31833918460945265
+     },
+     "tgt_test": {
+      "auroc": 0.7679858606589253,
+      "utility": 0.3240964611657189
+     }
+    },
+    "rules_top1": {
+     "src_test": {
+      "auroc": 0.8198222344325994,
+      "utility": 0.31851776690951156
+     },
+     "tgt_test": {
+      "auroc": 0.7679259305077474,
+      "utility": 0.3231549479657039
+     }
+    },
+    "rules_top2": {
+     "src_test": {
+      "auroc": 0.8197648150048082,
+      "utility": 0.31854414838565653
+     },
+     "tgt_test": {
+      "auroc": 0.7679690093547008,
+      "utility": 0.32371357913104615
+     }
+    },
+    "rules_top3": {
+     "src_test": {
+      "auroc": 0.8197646425012466,
+      "utility": 0.318471091990178
+     },
+     "tgt_test": {
+      "auroc": 0.767968969469957,
+      "utility": 0.32369098281424574
+     }
+    },
+    "rules_top5": {
+     "src_test": {
+      "auroc": 0.8197645292957839,
+      "utility": 0.318471091990178
+     },
+     "tgt_test": {
+      "auroc": 0.7679692470012988,
+      "utility": 0.323645790180645
+     }
+    },
+    "rules_top3_scorecard20": {
+     "src_test": {
+      "auroc": 0.7913702246863207,
+      "utility": 0.2704182478641151
+     },
+     "tgt_test": {
+      "auroc": 0.7442517991010776,
+      "utility": 0.26637040384639527
+     }
+    },
+    "rules_top3_scorecard50": {
+     "src_test": {
+      "auroc": 0.8171809892708392,
+      "utility": 0.30401201371836756
+     },
+     "tgt_test": {
+      "auroc": 0.764553321448566,
+      "utility": 0.3141779334412936
+     }
+    }
+   },
+   "shift_decomposition": {
+    "actual_mean_logit_change": 0.719475269317627,
+    "scorecard_total": 0.7194353342056274,
+    "rules_total": 3.9627051592106e-05,
+    "top_terms": [
+     {
+      "term": "BaseExcess recently measured",
+      "weight": 0.7005022764205933,
+      "mean_src": 0.011792966164648533,
+      "mean_tgt": 0.4802303612232208,
+      "contribution": 0.3281414806842804
+     },
+     {
+      "term": "HCO3 recently measured",
+      "weight": -0.38470131158828735,
+      "mean_src": 0.012552164494991302,
+      "mean_tgt": 0.7649046778678894,
+      "contribution": -0.28943100571632385
+     },
+     {
+      "term": "HospAdmTime is NORMAL",
+      "weight": -0.8773043155670166,
+      "mean_src": 0.4783962368965149,
+      "mean_tgt": 0.3508605659008026,
+      "contribution": 0.11188759654760361
+     },
+     {
+      "term": "PTT recently measured",
+      "weight": 0.23808519542217255,
+      "mean_src": 0.15012039244174957,
+      "mean_tgt": 0.5471294522285461,
+      "contribution": 0.09452198445796967
+     },
+     {
+      "term": "pH is HIGH (rising)",
+      "weight": 0.6882882118225098,
+      "mean_src": 0.09299778193235397,
+      "mean_tgt": 0.2258397340774536,
+      "contribution": 0.09143354743719101
+     },
+     {
+      "term": "HospAdmTime is HIGH",
+      "weight": 0.3708552420139313,
+      "mean_src": 0.29567015171051025,
+      "mean_tgt": 0.47575268149375916,
+      "contribution": 0.06678455322980881
+     },
+     {
+      "term": "FiO2 is HIGH (rising)",
+      "weight": 0.501255452632904,
+      "mean_src": 0.08501720428466797,
+      "mean_tgt": 0.21753016114234924,
+      "contribution": 0.06642284244298935
+     },
+     {
+      "term": "EtCO2 recently measured",
+      "weight": 0.8890718817710876,
+      "mean_src": 0.07417680323123932,
+      "mean_tgt": 0.0,
+      "contribution": -0.06594850867986679
+     },
+     {
+      "term": "FiO2 recently measured",
+      "weight": 0.21569950878620148,
+      "mean_src": 0.11770869791507721,
+      "mean_tgt": 0.40943992137908936,
+      "contribution": 0.062926284968853
+     },
+     {
+      "term": "SaO2 recently measured",
+      "weight": 0.523557722568512,
+      "mean_src": 0.0998205840587616,
+      "mean_tgt": 0.19132454693317413,
+      "contribution": 0.04790760576725006
+     },
+     {
+      "term": "Glucose frequently measured",
+      "weight": -0.45996829867362976,
+      "mean_src": 0.19987225532531738,
+      "mean_tgt": 0.11361463367938995,
+      "contribution": 0.039675772190093994
+     },
+     {
+      "term": "PaCO2 recently measured",
+      "weight": 0.12203460931777954,
+      "mean_src": 0.09546716511249542,
+      "mean_tgt": 0.3108556568622589,
+      "contribution": 0.026284851133823395
+     },
+     {
+      "term": "HospAdmTime is LOW",
+      "weight": -0.5119209289550781,
+      "mean_src": 0.18014298379421234,
+      "mean_tgt": 0.13540607690811157,
+      "contribution": 0.022901758551597595
+     },
+     {
+      "term": "pH recently measured",
+      "weight": 0.06953824311494827,
+      "mean_src": 0.095758818089962,
+      "mean_tgt": 0.35117724537849426,
+      "contribution": 0.0177613478153944
+     },
+     {
+      "term": "MAP is LOW (now)",
+      "weight": 0.1432754397392273,
+      "mean_src": 0.18467791378498077,
+      "mean_tgt": 0.302186518907547,
+      "contribution": 0.016836097463965416
+     }
+    ]
+   },
+   "halflife_h": {
+    "HR": 6.361036777496338,
+    "O2Sat": 0.15295624732971191,
+    "Temp": 16.152481079101562,
+    "SBP": 0.6595185995101929,
+    "MAP": 0.20077206194400787,
+    "DBP": 0.15921011567115784,
+    "Resp": 2.895160436630249,
+    "EtCO2": 1.1858794689178467,
+    "BaseExcess": 20.36236000061035,
+    "HCO3": 58.383663177490234,
+    "FiO2": 6.870468616485596,
+    "pH": 5.142785549163818,
+    "PaCO2": 5.116827487945557,
+    "SaO2": 7.482157230377197,
+    "AST": 23.111328125,
+    "BUN": 11.895501136779785,
+    "Alkalinephos": 20.370697021484375,
+    "Calcium": 0.4869673252105713,
+    "Chloride": 2.960836172103882,
+    "Creatinine": 2.086671829223633,
+    "Bilirubin_direct": 230.74241638183594,
+    "Glucose": 0.30652591586112976,
+    "Lactate": 3.355128526687622,
+    "Magnesium": 0.28832197189331055,
+    "Phosphate": 0.3656632602214813,
+    "Potassium": 0.3013140559196472,
+    "Bilirubin_total": 19.346975326538086,
+    "TroponinI": 4.411273002624512,
+    "Hct": 0.3455909490585327,
+    "Hgb": 0.28102150559425354,
+    "PTT": 35.475948333740234,
+    "WBC": 15.611173629760742,
+    "Fibrinogen": 9.764777183532715,
+    "Platelets": 0.3006998896598816
+   },
+   "halflife_init_h": {
+    "HR": 2.211470365524292,
+    "O2Sat": 2.260338068008423,
+    "Temp": 5.4508771896362305,
+    "SBP": 2.2534050941467285,
+    "MAP": 2.2586910724639893,
+    "DBP": 2.2540791034698486,
+    "Resp": 2.431431770324707,
+    "EtCO2": 4.552613258361816,
+    "BaseExcess": 23.917381286621094,
+    "HCO3": 21.85207176208496,
+    "FiO2": 25.0732479095459,
+    "pH": 25.042757034301758,
+    "PaCO2": 25.08099937438965,
+    "SaO2": 25.981937408447266,
+    "AST": 41.58974838256836,
+    "BUN": 27.080135345458984,
+    "Alkalinephos": 41.461753845214844,
+    "Calcium": 22.545883178710938,
+    "Chloride": 26.564228057861328,
+    "Creatinine": 27.060901641845703,
+    "Bilirubin_direct": 58.17230224609375,
+    "Glucose": 7.613027572631836,
+    "Lactate": 24.7646427154541,
+    "Magnesium": 27.773094177246094,
+    "Phosphate": 32.087860107421875,
+    "Potassium": 20.20635414123535,
+    "Bilirubin_total": 41.381927490234375,
+    "TroponinI": 31.217605590820312,
+    "Hct": 25.266868591308594,
+    "Hgb": 25.081485748291016,
+    "PTT": 44.23390579223633,
+    "WBC": 27.650737762451172,
+    "Fibrinogen": 34.6757926940918,
+    "Platelets": 27.32341957092285
+   }
+  },
+  "2": {
+   "threshold_prob": 0.02502832377281029,
+   "n_terms": 386,
+   "n_nonzero_scorecard": 90,
+   "rules": [
+    {
+     "rule": 22,
+     "beta": 0.8678056597709656,
+     "mean_fire": 0.022993458434939384,
+     "importance": 0.019953852519392967,
+     "antecedents": [
+      [
+       "WBC is LOW (rising)",
+       3.2571163177490234
+      ],
+      [
+       "Resp is LOW (sustained)",
+       0.6480208039283752
+      ],
+      [
+       "Platelets is LOW (rising)",
+       0.0038354264106601477
+      ]
+     ]
+    },
+    {
+     "rule": 2,
+     "beta": 0.37046486139297485,
+     "mean_fire": 0.02104353904724121,
+     "importance": 0.007795891724526882,
+     "antecedents": [
+      [
+       "BaseExcess recently measured",
+       2.483966827392578
+      ],
+      [
+       "BaseExcess is HIGH (sustained)",
+       1.4970698356628418
+      ],
+      [
+       "pH is HIGH (rising)",
+       0.002838372951373458
+      ]
+     ]
+    },
+    {
+     "rule": 19,
+     "beta": -0.018844589591026306,
+     "mean_fire": 0.03907473012804985,
+     "importance": 0.0007363472250290215,
+     "antecedents": [
+      [
+       "Platelets is LOW (now)",
+       1.9086405038833618
+      ],
+      [
+       "HR is LOW (now)",
+       1.342527151107788
+      ],
+      [
+       "HCO3 recently measured",
+       0.005838582292199135
+      ]
+     ]
+    },
+    {
+     "rule": 10,
+     "beta": 0.01688453182578087,
+     "mean_fire": 0.02842050790786743,
+     "importance": 0.0004798669833689928,
+     "antecedents": [
+      [
+       "Fibrinogen is HIGH (sustained)",
+       2.2966790199279785
+      ],
+      [
+       "Bilirubin_total recently measured",
+       1.3187416791915894
+      ],
+      [
+       "TroponinI recently measured",
+       0.0060058883391320705
+      ]
+     ]
+    },
+    {
+     "rule": 9,
+     "beta": 0.006545240059494972,
+     "mean_fire": 0.039250507950782776,
+     "importance": 0.00025690399343147874,
+     "antecedents": [
+      [
+       "BUN is LOW (sustained)",
+       2.0370712280273438
+      ],
+      [
+       "Resp is HIGH (now)",
+       0.708716869354248
+      ],
+      [
+       "Bilirubin_direct frequently measured",
+       0.009661160409450531
+      ]
+     ]
+    },
+    {
+     "rule": 21,
+     "beta": 0.006803070195019245,
+     "mean_fire": 0.03125734627246857,
+     "importance": 0.00021264591487124562,
+     "antecedents": [
+      [
+       "Bilirubin_total is HIGH (sustained)",
+       1.6966992616653442
+      ],
+      [
+       "pH is HIGH (rising)",
+       1.065781593322754
+      ],
+      [
+       "BaseExcess recently measured",
+       0.010078536346554756
+      ]
+     ]
+    },
+    {
+     "rule": 15,
+     "beta": -0.006414193194359541,
+     "mean_fire": 0.029922984540462494,
+     "importance": 0.00019193180196452886,
+     "antecedents": [
+      [
+       "BaseExcess is HIGH (rising)",
+       2.195399761199951
+      ],
+      [
+       "EtCO2 frequently measured",
+       1.0136198997497559
+      ],
+      [
+       "Bilirubin_direct frequently measured",
+       0.0034592438023537397
+      ]
+     ]
+    },
+    {
+     "rule": 3,
+     "beta": 0.006331854499876499,
+     "mean_fire": 0.028451867401599884,
+     "importance": 0.00018015308887697756,
+     "antecedents": [
+      [
+       "SaO2 is HIGH (rising)",
+       2.4629693031311035
+      ],
+      [
+       "AST recently measured",
+       0.678848147392273
+      ],
+      [
+       "WBC is LOW (rising)",
+       0.004276111721992493
+      ]
+     ]
+    },
+    {
+     "rule": 13,
+     "beta": -0.002783543663099408,
+     "mean_fire": 0.03549601882696152,
+     "importance": 9.880471770884469e-05,
+     "antecedents": [
+      [
+       "Bilirubin_total is LOW (sustained)",
+       0.9101274609565735
+      ],
+      [
+       "Lactate is NORMAL (now)",
+       0.7502774596214294
+      ],
+      [
+       "Bilirubin_direct frequently measured",
+       0.027230946347117424
+      ]
+     ]
+    },
+    {
+     "rule": 12,
+     "beta": 0.0028459210880100727,
+     "mean_fire": 0.03366021066904068,
+     "importance": 9.579430479789153e-05,
+     "antecedents": [
+      [
+       "Hgb is HIGH (sustained)",
+       1.1922541856765747
+      ],
+      [
+       "Bilirubin_direct is NORMAL (now)",
+       1.0977271795272827
+      ],
+      [
+       "HCO3 frequently measured",
+       0.02014188840985298
+      ]
+     ]
+    }
+   ],
+   "scorecard": [
+    {
+     "term": "ICULOS is NORMAL",
+     "weight": -1.144316554069519,
+     "mean_membership": 0.6888534426689148,
+     "importance": 0.7882664203643799
+    },
+    {
+     "term": "HospAdmTime is LOW",
+     "weight": -0.9654644131660461,
+     "mean_membership": 0.7777717709541321,
+     "importance": 0.7509109377861023
+    },
+    {
+     "term": "Temp frequently measured",
+     "weight": -0.767777144908905,
+     "mean_membership": 0.30431243777275085,
+     "importance": 0.23364412784576416
+    },
+    {
+     "term": "Temp is NORMAL (sustained)",
+     "weight": -0.3188028335571289,
+     "mean_membership": 0.6265695691108704,
+     "importance": 0.19975215196609497
+    },
+    {
+     "term": "WBC is NORMAL (now)",
+     "weight": -0.26869645714759827,
+     "mean_membership": 0.5469223260879517,
+     "importance": 0.14695608615875244
+    },
+    {
+     "term": "Temp is NORMAL (now)",
+     "weight": -0.2135123610496521,
+     "mean_membership": 0.6783286929130554,
+     "importance": 0.1448315680027008
+    },
+    {
+     "term": "HR is LOW (now)",
+     "weight": -0.3303597569465637,
+     "mean_membership": 0.3340112864971161,
+     "importance": 0.11034388840198517
+    },
+    {
+     "term": "HR is HIGH (now)",
+     "weight": 0.4133851230144501,
+     "mean_membership": 0.26045045256614685,
+     "importance": 0.10766634345054626
+    },
+    {
+     "term": "ICULOS is HIGH",
+     "weight": 1.12468683719635,
+     "mean_membership": 0.09066568315029144,
+     "importance": 0.10197050124406815
+    },
+    {
+     "term": "BUN is HIGH (rising)",
+     "weight": 0.8397558331489563,
+     "mean_membership": 0.11072621494531631,
+     "importance": 0.09298298507928848
+    },
+    {
+     "term": "BUN is LOW (rising)",
+     "weight": -0.45179855823516846,
+     "mean_membership": 0.1882518082857132,
+     "importance": 0.08505189418792725
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.4258435070514679,
+     "mean_membership": 0.198049396276474,
+     "importance": 0.08433804661035538
+    },
+    {
+     "term": "Resp is HIGH (now)",
+     "weight": 0.2767709791660309,
+     "mean_membership": 0.2558440864086151,
+     "importance": 0.0708102211356163
+    },
+    {
+     "term": "EtCO2 recently measured",
+     "weight": 0.9170412421226501,
+     "mean_membership": 0.07543927431106567,
+     "importance": 0.069180928170681
+    },
+    {
+     "term": "WBC is HIGH (rising)",
+     "weight": 0.4556441307067871,
+     "mean_membership": 0.15157267451286316,
+     "importance": 0.069063201546669
+    },
+    {
+     "term": "Temp is HIGH (now)",
+     "weight": 0.5342245697975159,
+     "mean_membership": 0.12578381597995758,
+     "importance": 0.0671968013048172
+    },
+    {
+     "term": "pH is HIGH (rising)",
+     "weight": 0.6611902713775635,
+     "mean_membership": 0.08938609063625336,
+     "importance": 0.05910121276974678
+    },
+    {
+     "term": "BUN is HIGH (now)",
+     "weight": 0.19543667137622833,
+     "mean_membership": 0.2843809127807617,
+     "importance": 0.055578459054231644
+    },
+    {
+     "term": "Temp is HIGH (sustained)",
+     "weight": 0.3804692029953003,
+     "mean_membership": 0.13788427412509918,
+     "importance": 0.052460718899965286
+    },
+    {
+     "term": "Temp recently measured",
+     "weight": 0.06244546175003052,
+     "mean_membership": 0.8190526366233826,
+     "importance": 0.051146119832992554
+    }
+   ],
+   "fidelity": {
+    "full": {
+     "src_test": {
+      "auroc": 0.827733741032564,
+      "utility": 0.34117133754084056
+     },
+     "tgt_test": {
+      "auroc": 0.7728766492507717,
+      "utility": 0.3418483787142696
+     }
+    },
+    "rules_top1": {
+     "src_test": {
+      "auroc": 0.8275018072982548,
+      "utility": 0.33845607484221846
+     },
+     "tgt_test": {
+      "auroc": 0.76920098593757,
+      "utility": 0.3344430635584178
+     }
+    },
+    "rules_top2": {
+     "src_test": {
+      "auroc": 0.8276991217239903,
+      "utility": 0.3403393063701118
+     },
+     "tgt_test": {
+      "auroc": 0.7723679592292831,
+      "utility": 0.34194127468333774
+     }
+    },
+    "rules_top3": {
+     "src_test": {
+      "auroc": 0.8276997389632975,
+      "utility": 0.34035757046898146
+     },
+     "tgt_test": {
+      "auroc": 0.77236886162161,
+      "utility": 0.3419864673169385
+     }
+    },
+    "rules_top5": {
+     "src_test": {
+      "auroc": 0.8277000138908494,
+      "utility": 0.3403758345678511
+     },
+     "tgt_test": {
+      "auroc": 0.7723711466850527,
+      "utility": 0.3420655544257397
+     }
+    },
+    "rules_top3_scorecard20": {
+     "src_test": {
+      "auroc": 0.8029301223218445,
+      "utility": 0.29804371207662805
+     },
+     "tgt_test": {
+      "auroc": 0.7587075059631015,
+      "utility": 0.32248207986542643
+     }
+    },
+    "rules_top3_scorecard50": {
+     "src_test": {
+      "auroc": 0.8259073730480521,
+      "utility": 0.32936461229376784
+     },
+     "tgt_test": {
+      "auroc": 0.7715215584352045,
+      "utility": 0.33706172560539305
+     }
+    }
+   },
+   "shift_decomposition": {
+    "actual_mean_logit_change": 0.639307975769043,
+    "scorecard_total": 0.6168807744979858,
+    "rules_total": 0.022427039220929146,
+    "top_terms": [
+     {
+      "term": "HCO3 recently measured",
+      "weight": -0.4997139871120453,
+      "mean_src": 0.012296092696487904,
+      "mean_tgt": 0.7569442391395569,
+      "contribution": -0.37211111187934875
+     },
+     {
+      "term": "BaseExcess recently measured",
+      "weight": 0.8446332216262817,
+      "mean_src": 0.00867618340998888,
+      "mean_tgt": 0.40880781412124634,
+      "contribution": 0.3379644751548767
+     },
+     {
+      "term": "HospAdmTime is LOW",
+      "weight": -0.9654644131660461,
+      "mean_src": 0.7777717709541321,
+      "mean_tgt": 0.650184690952301,
+      "contribution": 0.12318078428506851
+     },
+     {
+      "term": "FiO2 recently measured",
+      "weight": 0.37306272983551025,
+      "mean_src": 0.12698997557163239,
+      "mean_tgt": 0.4229942858219147,
+      "contribution": 0.11042816936969757
+     },
+     {
+      "term": "PTT recently measured",
+      "weight": 0.300327867269516,
+      "mean_src": 0.1282155066728592,
+      "mean_tgt": 0.49359196424484253,
+      "contribution": 0.1097327396273613
+     },
+     {
+      "term": "pH is HIGH (rising)",
+      "weight": 0.6611902713775635,
+      "mean_src": 0.08938609063625336,
+      "mean_tgt": 0.2054145634174347,
+      "contribution": 0.07671689987182617
+     },
+     {
+      "term": "EtCO2 recently measured",
+      "weight": 0.9170412421226501,
+      "mean_src": 0.07543927431106567,
+      "mean_tgt": 0.0,
+      "contribution": -0.069180928170681
+     },
+     {
+      "term": "SaO2 recently measured",
+      "weight": 0.4711064100265503,
+      "mean_src": 0.09940414875745773,
+      "mean_tgt": 0.19078193604946136,
+      "contribution": 0.043048661202192307
+     },
+     {
+      "term": "pH recently measured",
+      "weight": 0.14140425622463226,
+      "mean_src": 0.11244863271713257,
+      "mean_tgt": 0.3868049681186676,
+      "contribution": 0.03879515454173088
+     },
+     {
+      "term": "PaCO2 recently measured",
+      "weight": 0.16006024181842804,
+      "mean_src": 0.10585612803697586,
+      "mean_tgt": 0.33348870277404785,
+      "contribution": 0.036434926092624664
+     },
+     {
+      "term": "Glucose frequently measured",
+      "weight": -0.4258435070514679,
+      "mean_src": 0.198049396276474,
+      "mean_tgt": 0.11276044696569443,
+      "contribution": 0.03631974384188652
+     },
+     {
+      "term": "WBC is HIGH (rising)",
+      "weight": 0.4556441307067871,
+      "mean_src": 0.15157267451286316,
+      "mean_tgt": 0.21909759938716888,
+      "contribution": 0.03076733648777008
+     },
+     {
+      "term": "MAP is LOW (rising)",
+      "weight": 0.2841319441795349,
+      "mean_src": 0.08008284121751785,
+      "mean_tgt": 0.18612603843212128,
+      "contribution": 0.030130259692668915
+     },
+     {
+      "term": "Temp is HIGH (now)",
+      "weight": 0.5342245697975159,
+      "mean_src": 0.12578381597995758,
+      "mean_tgt": 0.16702982783317566,
+      "contribution": 0.02203463204205036
+     },
+     {
+      "term": "TroponinI recently measured",
+      "weight": 0.2181115448474884,
+      "mean_src": 0.10280374437570572,
+      "mean_tgt": 0.007514360826462507,
+      "contribution": -0.020783714950084686
+     }
+    ]
+   },
+   "halflife_h": {
+    "HR": 7.315462589263916,
+    "O2Sat": 0.13896915316581726,
+    "Temp": 8.664469718933105,
+    "SBP": 0.6875659227371216,
+    "MAP": 0.22036053240299225,
+    "DBP": 0.16600459814071655,
+    "Resp": 2.958256721496582,
+    "EtCO2": 1.4167945384979248,
+    "BaseExcess": 10.46198844909668,
+    "HCO3": 52.02653121948242,
+    "FiO2": 7.93449592590332,
+    "pH": 6.84477424621582,
+    "PaCO2": 6.135247230529785,
+    "SaO2": 7.425230503082275,
+    "AST": 17.849729537963867,
+    "BUN": 14.138561248779297,
+    "Alkalinephos": 16.401901245117188,
+    "Calcium": 0.4042724668979645,
+    "Chloride": 2.717153787612915,
+    "Creatinine": 0.48248955607414246,
+    "Bilirubin_direct": 107.44441986083984,
+    "Glucose": 0.2785065472126007,
+    "Lactate": 1.264369010925293,
+    "Magnesium": 0.30703917145729065,
+    "Phosphate": 0.8324280381202698,
+    "Potassium": 2.0784144401550293,
+    "Bilirubin_total": 16.49772071838379,
+    "TroponinI": 5.532010078430176,
+    "Hct": 0.4124656915664673,
+    "Hgb": 0.30651500821113586,
+    "PTT": 22.129079818725586,
+    "WBC": 14.707474708557129,
+    "Fibrinogen": 11.682747840881348,
+    "Platelets": 1.9361246824264526
+   },
+   "halflife_init_h": {
+    "HR": 2.211470365524292,
+    "O2Sat": 2.260338068008423,
+    "Temp": 5.4508771896362305,
+    "SBP": 2.2534050941467285,
+    "MAP": 2.2586910724639893,
+    "DBP": 2.2540791034698486,
+    "Resp": 2.431431770324707,
+    "EtCO2": 4.552613258361816,
+    "BaseExcess": 23.917381286621094,
+    "HCO3": 21.85207176208496,
+    "FiO2": 25.0732479095459,
+    "pH": 25.042757034301758,
+    "PaCO2": 25.08099937438965,
+    "SaO2": 25.981937408447266,
+    "AST": 41.58974838256836,
+    "BUN": 27.080135345458984,
+    "Alkalinephos": 41.461753845214844,
+    "Calcium": 22.545883178710938,
+    "Chloride": 26.564228057861328,
+    "Creatinine": 27.060901641845703,
+    "Bilirubin_direct": 58.17230224609375,
+    "Glucose": 7.613027572631836,
+    "Lactate": 24.7646427154541,
+    "Magnesium": 27.773094177246094,
+    "Phosphate": 32.087860107421875,
+    "Potassium": 20.20635414123535,
+    "Bilirubin_total": 41.381927490234375,
+    "TroponinI": 31.217605590820312,
+    "Hct": 25.266868591308594,
+    "Hgb": 25.081485748291016,
+    "PTT": 44.23390579223633,
+    "WBC": 27.650737762451172,
+    "Fibrinogen": 34.6757926940918,
+    "Platelets": 27.32341957092285
+   }
+  }
+ },
+ "top20_scorecard_jaccard": [
+  0.6222222222222222,
+  0.6,
+  0.6666666666666666
+ ]
+}

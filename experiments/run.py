@@ -45,6 +45,11 @@ def prepare_site(site):
     return d, patient_split(d, seed=0)
 
 
+# Engineered feature layout (features.py): 34 LOCF, 34 time-since-measured, 40 vital windows,
+# 3 static, ICULOS, n_labs_seen. "Process-free" drops the measurement-timing columns.
+PROCESS_FREE = np.r_[0:34, 68:112]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", default="A")
@@ -81,9 +86,10 @@ def main():
                 continue
             t0 = time.time()
             print(f"[{a.src}->{a.tgt}] {name} seed {seed}", flush=True)
-            if name in ("lgbm", "lr"):
-                preds = fit_tabular(name, seed, src["F"][tr_rows], src["y"][tr_rows],
-                                    {k: d["F"][row_index(d["offsets"], p)] for k, (d, p) in parts.items()},
+            if name in ("lgbm", "lr", "lgbm_noproc"):
+                cols = PROCESS_FREE if name.endswith("_noproc") else slice(None)
+                preds = fit_tabular(name.split("_")[0], seed, src["F"][tr_rows][:, cols], src["y"][tr_rows],
+                                    {k: d["F"][row_index(d["offsets"], p)][:, cols] for k, (d, p) in parts.items()},
                                     labels["src_val"])
             else:
                 if nn_data is None:

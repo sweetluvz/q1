@@ -157,13 +157,13 @@ def main():
             print(d, name, "src AUROC %.3f tgt AUROC %.3f | src U %.3f tgt U %.3f" % (
                 agg["src_test"]["auroc"][0], agg["tgt_test"]["auroc"][0], agg["src_test"]["utility"][0],
                 agg["tgt_test"]["utility"][0]), flush=True)
-        if "staf" in ens:
-            thr = {n: best_threshold(lab["y_src_val"], p["src_val"], lab["off_src_val"])[0] for n, p in ens.items()}
-            for other in ens:
-                if other == "staf":
-                    continue
-                S["paired"][f"staf_vs_{other}"] = {
-                    part: paired_bootstrap(lab, ens["staf"][part], ens[other][part], part, thr["staf"], thr[other])
+        thr = {n: best_threshold(lab["y_src_val"], p["src_val"], lab["off_src_val"])[0] for n, p in ens.items()}
+        pairs = [("staf", o) for o in ens if o != "staf"] + [("staf_nomeas", "lgbm"), ("lgbm_noproc", "lgbm"),
+                                                             ("staf_nomeas", "lgbm_noproc")]
+        for a, b in pairs:
+            if a in ens and b in ens:
+                S["paired"][f"{a}_vs_{b}"] = {
+                    part: paired_bootstrap(lab, ens[a][part], ens[b][part], part, thr[a], thr[b])
                     for part in ("src_test", "tgt_test")}
         summary[d] = S
     with open(os.path.join(OUT, "summary.json"), "w") as f:
