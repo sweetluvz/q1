@@ -1,0 +1,34 @@
+[
+ {
+  "cfg": {
+   "hidden": 32,
+   "lr": 0.001
+  },
+  "val_logloss": 0.09566211700439453,
+  "best_iteration": null
+ },
+ {
+  "cfg": {
+   "hidden": 32,
+   "lr": 0.003
+  },
+  "val_logloss": 0.09586194157600403,
+  "best_iteration": null
+ },
+ {
+  "cfg": {
+   "hidden": 64,
+   "lr": 0.001
+  },
+  "val_logloss": 0.09533572196960449,
+  "best_iteration": null
+ },
+ {
+  "cfg": {
+   "hidden": 64,
+   "lr": 0.003
+  },
+  "val_logloss": 0.09563218057155609,
+  "best_iteration": null
+ }
+]

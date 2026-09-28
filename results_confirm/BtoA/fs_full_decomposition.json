@@ -1,0 +1,699 @@
+{
+ "seeds": {
+  "0": {
+   "actual_mean_logit_change": 0.677459716796875,
+   "decomposition_total": 0.6774591207504272,
+   "share_abs_contribution_measurement_terms": 0.7052616477012634,
+   "share_abs_contribution_measurement_top15": 0.8029879927635193,
+   "n_measurement_terms_in_top20": 4,
+   "n_nonzero_terms": 116,
+   "n_terms": 386,
+   "top_contributions": [
+    {
+     "term": "BaseExcess recently measured",
+     "weight": 0.6313667893409729,
+     "mean_src": 0.01313188299536705,
+     "mean_tgt": 0.5056467056274414,
+     "contribution": 0.31095749139785767
+    },
+    {
+     "term": "HCO3 recently measured",
+     "weight": -0.29826927185058594,
+     "mean_src": 0.01075518038123846,
+     "mean_tgt": 0.7047306299209595,
+     "contribution": -0.2069915533065796
+    },
+    {
+     "term": "PTT recently measured",
+     "weight": 0.25368624925613403,
+     "mean_src": 0.16917376220226288,
+     "mean_tgt": 0.5892273187637329,
+     "contribution": 0.1065618097782135
+    },
+    {
+     "term": "HospAdmTime is LOW",
+     "weight": -0.7270900011062622,
+     "mean_src": 0.7314767241477966,
+     "mean_tgt": 0.5992479920387268,
+     "contribution": 0.09614218771457672
+    },
+    {
+     "term": "FiO2 recently measured",
+     "weight": 0.23155100643634796,
+     "mean_src": 0.1282922774553299,
+     "mean_tgt": 0.42484042048454285,
+     "contribution": 0.0686660185456276
+    },
+    {
+     "term": "EtCO2 recently measured",
+     "weight": 0.7771692276000977,
+     "mean_src": 0.07380113005638123,
+     "mean_tgt": 0.0,
+     "contribution": -0.05735596641898155
+    },
+    {
+     "term": "pH recently measured",
+     "weight": 0.19192703068256378,
+     "mean_src": 0.12781919538974762,
+     "mean_tgt": 0.4164679944515228,
+     "contribution": 0.05539950355887413
+    },
+    {
+     "term": "pH is HIGH (rising)",
+     "weight": 0.6410309672355652,
+     "mean_src": 0.07786782830953598,
+     "mean_tgt": 0.15431274473667145,
+     "contribution": 0.04900356009602547
+    },
+    {
+     "term": "PaCO2 recently measured",
+     "weight": 0.21300970017910004,
+     "mean_src": 0.1056513786315918,
+     "mean_tgt": 0.33305543661117554,
+     "contribution": 0.04843927174806595
+    },
+    {
+     "term": "FiO2 is HIGH (rising)",
+     "weight": 0.4611794948577881,
+     "mean_src": 0.07651038467884064,
+     "mean_tgt": 0.1633424609899521,
+     "contribution": 0.04004517197608948
+    },
+    {
+     "term": "SaO2 recently measured",
+     "weight": 0.42361870408058167,
+     "mean_src": 0.10083598643541336,
+     "mean_tgt": 0.19264303147792816,
+     "contribution": 0.038891181349754333
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.424286812543869,
+     "mean_src": 0.1951398402452469,
+     "mean_tgt": 0.11137381941080093,
+     "contribution": 0.03554081916809082
+    },
+    {
+     "term": "WBC is HIGH (rising)",
+     "weight": 0.40423232316970825,
+     "mean_src": 0.1465407758951187,
+     "mean_tgt": 0.21102547645568848,
+     "contribution": 0.026066800579428673
+    },
+    {
+     "term": "Temp is HIGH (now)",
+     "weight": 0.4677315652370453,
+     "mean_src": 0.13234587013721466,
+     "mean_tgt": 0.17686481773853302,
+     "contribution": 0.0208229161798954
+    },
+    {
+     "term": "EtCO2 frequently measured",
+     "weight": 0.2729230523109436,
+     "mean_src": 0.06272219121456146,
+     "mean_tgt": 0.0,
+     "contribution": -0.017118331044912338
+    }
+   ],
+   "top20_by_importance": [
+    "ICULOS is HIGH",
+    "HospAdmTime is LOW",
+    "Temp frequently measured",
+    "Temp is NORMAL (sustained)",
+    "Temp is NORMAL (now)",
+    "ICULOS is NORMAL",
+    "BUN is HIGH (rising)",
+    "BUN is HIGH (now)",
+    "Resp frequently measured",
+    "WBC is NORMAL (now)",
+    "HR is HIGH (now)",
+    "Glucose frequently measured",
+    "HR is LOW (now)",
+    "Temp is HIGH (now)",
+    "Resp is HIGH (now)",
+    "WBC is HIGH (rising)",
+    "EtCO2 recently measured",
+    "BUN is NORMAL (now)",
+    "BUN is LOW (now)",
+    "pH is HIGH (rising)"
+   ]
+  },
+  "1": {
+   "actual_mean_logit_change": 0.4787421226501465,
+   "decomposition_total": 0.4787418246269226,
+   "share_abs_contribution_measurement_terms": 0.7445400953292847,
+   "share_abs_contribution_measurement_top15": 0.8516647219657898,
+   "n_measurement_terms_in_top20": 7,
+   "n_nonzero_terms": 116,
+   "n_terms": 386,
+   "top_contributions": [
+    {
+     "term": "BaseExcess recently measured",
+     "weight": 0.5156234502792358,
+     "mean_src": 0.01374898198992014,
+     "mean_tgt": 0.5164681673049927,
+     "contribution": 0.25921377539634705
+    },
+    {
+     "term": "HCO3 recently measured",
+     "weight": -0.29074960947036743,
+     "mean_src": 0.011051052249968052,
+     "mean_tgt": 0.7153692245483398,
+     "contribution": -0.2047802358865738
+    },
+    {
+     "term": "PTT recently measured",
+     "weight": 0.34483596682548523,
+     "mean_src": 0.1709222048521042,
+     "mean_tgt": 0.5928853750228882,
+     "contribution": 0.1455080658197403
+    },
+    {
+     "term": "Chloride recently measured",
+     "weight": -0.16989070177078247,
+     "mean_src": 0.027428211644291878,
+     "mean_tgt": 0.42504051327705383,
+     "contribution": -0.06755063682794571
+    },
+    {
+     "term": "FiO2 recently measured",
+     "weight": 0.20144008100032806,
+     "mean_src": 0.1184321939945221,
+     "mean_tgt": 0.41052311658859253,
+     "contribution": 0.05883881822228432
+    },
+    {
+     "term": "pH is HIGH (rising)",
+     "weight": 0.5879069566726685,
+     "mean_src": 0.08293430507183075,
+     "mean_tgt": 0.1829788088798523,
+     "contribution": 0.05881686136126518
+    },
+    {
+     "term": "EtCO2 recently measured",
+     "weight": 0.7474716305732727,
+     "mean_src": 0.07361572235822678,
+     "mean_tgt": 0.0,
+     "contribution": -0.05502566322684288
+    },
+    {
+     "term": "FiO2 is HIGH (rising)",
+     "weight": 0.4805104434490204,
+     "mean_src": 0.0751706063747406,
+     "mean_tgt": 0.161686971783638,
+     "contribution": 0.04157201573252678
+    },
+    {
+     "term": "HospAdmTime is NORMAL",
+     "weight": -0.49879324436187744,
+     "mean_src": 0.5272353887557983,
+     "mean_tgt": 0.44750112295150757,
+     "contribution": 0.03977091237902641
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.4709054231643677,
+     "mean_src": 0.19431835412979126,
+     "mean_tgt": 0.11097753793001175,
+     "contribution": 0.039245642721652985
+    },
+    {
+     "term": "pH recently measured",
+     "weight": 0.14500939846038818,
+     "mean_src": 0.10732897371053696,
+     "mean_tgt": 0.3762928545475006,
+     "contribution": 0.03900228813290596
+    },
+    {
+     "term": "PaCO2 recently measured",
+     "weight": 0.16723613440990448,
+     "mean_src": 0.10590289533138275,
+     "mean_tgt": 0.3335875868797302,
+     "contribution": 0.038077108561992645
+    },
+    {
+     "term": "SaO2 recently measured",
+     "weight": 0.3971744477748871,
+     "mean_src": 0.0967303067445755,
+     "mean_tgt": 0.18727125227451324,
+     "contribution": 0.03596055135130882
+    },
+    {
+     "term": "HospAdmTime is HIGH",
+     "weight": 0.21034395694732666,
+     "mean_src": 0.26254355907440186,
+     "mean_tgt": 0.39270660281181335,
+     "contribution": 0.027379009872674942
+    },
+    {
+     "term": "Resp frequently measured",
+     "weight": -0.21021005511283875,
+     "mean_src": 0.603535532951355,
+     "mean_tgt": 0.692579448223114,
+     "contribution": -0.018717925995588303
+    }
+   ],
+   "top20_by_importance": [
+    "ICULOS is NORMAL",
+    "HospAdmTime is NORMAL",
+    "Temp frequently measured",
+    "WBC is NORMAL (now)",
+    "Resp frequently measured",
+    "Temp is NORMAL (now)",
+    "BUN is HIGH (rising)",
+    "BUN is HIGH (now)",
+    "HR is HIGH (now)",
+    "Temp is NORMAL (sustained)",
+    "Glucose frequently measured",
+    "HR is LOW (now)",
+    "Temp recently measured",
+    "Bilirubin_total is LOW (now)",
+    "PTT recently measured",
+    "Resp is NORMAL (now)",
+    "HR frequently measured",
+    "HospAdmTime is HIGH",
+    "EtCO2 recently measured",
+    "Resp is HIGH (now)"
+   ]
+  },
+  "2": {
+   "actual_mean_logit_change": 0.6070137023925781,
+   "decomposition_total": 0.6070132851600647,
+   "share_abs_contribution_measurement_terms": 0.7480297088623047,
+   "share_abs_contribution_measurement_top15": 0.8336766362190247,
+   "n_measurement_terms_in_top20": 4,
+   "n_nonzero_terms": 114,
+   "n_terms": 386,
+   "top_contributions": [
+    {
+     "term": "BaseExcess recently measured",
+     "weight": 0.9220775365829468,
+     "mean_src": 0.009012123569846153,
+     "mean_tgt": 0.41749343276023865,
+     "contribution": 0.37665143609046936
+    },
+    {
+     "term": "HCO3 recently measured",
+     "weight": -0.4811443090438843,
+     "mean_src": 0.011686265468597412,
+     "mean_tgt": 0.7371981739997864,
+     "contribution": -0.34907591342926025
+    },
+    {
+     "term": "PTT recently measured",
+     "weight": 0.32025405764579773,
+     "mean_src": 0.13893064856529236,
+     "mean_tgt": 0.520487904548645,
+     "contribution": 0.12219525873661041
+    },
+    {
+     "term": "FiO2 recently measured",
+     "weight": 0.3686983585357666,
+     "mean_src": 0.11736263334751129,
+     "mean_tgt": 0.4089200794696808,
+     "contribution": 0.10749674588441849
+    },
+    {
+     "term": "HospAdmTime is LOW",
+     "weight": -0.8094125986099243,
+     "mean_src": 0.7057628631591797,
+     "mean_tgt": 0.5771406888961792,
+     "contribution": 0.10410840809345245
+    },
+    {
+     "term": "pH is HIGH (rising)",
+     "weight": 0.5884371995925903,
+     "mean_src": 0.09126710146665573,
+     "mean_tgt": 0.21325214207172394,
+     "contribution": 0.07178053259849548
+    },
+    {
+     "term": "EtCO2 recently measured",
+     "weight": 0.9086034893989563,
+     "mean_src": 0.0744272917509079,
+     "mean_tgt": 0.0,
+     "contribution": -0.06762489676475525
+    },
+    {
+     "term": "pH recently measured",
+     "weight": 0.16419047117233276,
+     "mean_src": 0.11096812784671783,
+     "mean_tgt": 0.3838001489639282,
+     "contribution": 0.044796422123909
+    },
+    {
+     "term": "SaO2 recently measured",
+     "weight": 0.44938012957572937,
+     "mean_src": 0.09442158043384552,
+     "mean_tgt": 0.18420198559761047,
+     "contribution": 0.040345530956983566
+    },
+    {
+     "term": "PaCO2 recently measured",
+     "weight": 0.17991282045841217,
+     "mean_src": 0.10070758312940598,
+     "mean_tgt": 0.32244160771369934,
+     "contribution": 0.03989279270172119
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.46106845140457153,
+     "mean_src": 0.19521407783031464,
+     "mean_tgt": 0.11140953004360199,
+     "contribution": 0.03863963484764099
+    },
+    {
+     "term": "WBC is HIGH (rising)",
+     "weight": 0.367674320936203,
+     "mean_src": 0.15151575207710266,
+     "mean_tgt": 0.21705171465873718,
+     "contribution": 0.024095891043543816
+    },
+    {
+     "term": "ICULOS is NORMAL",
+     "weight": -1.2105156183242798,
+     "mean_src": 0.6850565075874329,
+     "mean_tgt": 0.7036364674568176,
+     "contribution": -0.02249133214354515
+    },
+    {
+     "term": "TroponinI recently measured",
+     "weight": 0.23177020251750946,
+     "mean_src": 0.10147120803594589,
+     "mean_tgt": 0.007415234111249447,
+     "contribution": -0.021799372509121895
+    },
+    {
+     "term": "Temp is HIGH (now)",
+     "weight": 0.48973017930984497,
+     "mean_src": 0.12360123544931412,
+     "mean_tgt": 0.161642923951149,
+     "contribution": 0.018630163744091988
+    }
+   ],
+   "top20_by_importance": [
+    "ICULOS is NORMAL",
+    "HospAdmTime is LOW",
+    "Temp frequently measured",
+    "Temp is NORMAL (sustained)",
+    "Temp is NORMAL (now)",
+    "WBC is NORMAL (now)",
+    "HR is LOW (now)",
+    "HR is HIGH (now)",
+    "BUN is HIGH (rising)",
+    "Glucose frequently measured",
+    "ICULOS is HIGH",
+    "BUN is LOW (rising)",
+    "BUN is HIGH (now)",
+    "EtCO2 recently measured",
+    "Resp is HIGH (now)",
+    "BUN is LOW (now)",
+    "Temp is HIGH (now)",
+    "WBC is HIGH (rising)",
+    "Resp frequently measured",
+    "Resp is NORMAL (now)"
+   ]
+  },
+  "3": {
+   "actual_mean_logit_change": 0.6010727882385254,
+   "decomposition_total": 0.6010727882385254,
+   "share_abs_contribution_measurement_terms": 0.7475718259811401,
+   "share_abs_contribution_measurement_top15": 0.847461998462677,
+   "n_measurement_terms_in_top20": 5,
+   "n_nonzero_terms": 166,
+   "n_terms": 386,
+   "top_contributions": [
+    {
+     "term": "BaseExcess recently measured",
+     "weight": 0.6698436737060547,
+     "mean_src": 0.011041944846510887,
+     "mean_tgt": 0.4647170901298523,
+     "contribution": 0.3038914203643799
+    },
+    {
+     "term": "HCO3 recently measured",
+     "weight": -0.33061131834983826,
+     "mean_src": 0.010792354121804237,
+     "mean_tgt": 0.7060844302177429,
+     "contribution": -0.22987142205238342
+    },
+    {
+     "term": "PTT recently measured",
+     "weight": 0.3300337791442871,
+     "mean_src": 0.1383393108844757,
+     "mean_tgt": 0.5190396308898926,
+     "contribution": 0.12564396858215332
+    },
+    {
+     "term": "FiO2 recently measured",
+     "weight": 0.2738480269908905,
+     "mean_src": 0.1289350539445877,
+     "mean_tgt": 0.425746887922287,
+     "contribution": 0.08128133416175842
+    },
+    {
+     "term": "pH is HIGH (rising)",
+     "weight": 0.6249304413795471,
+     "mean_src": 0.09061968326568604,
+     "mean_tgt": 0.20620599389076233,
+     "contribution": 0.0722334012389183
+    },
+    {
+     "term": "pH recently measured",
+     "weight": 0.23395688831806183,
+     "mean_src": 0.11706194281578064,
+     "mean_tgt": 0.39599308371543884,
+     "contribution": 0.06525786221027374
+    },
+    {
+     "term": "EtCO2 recently measured",
+     "weight": 0.8088874816894531,
+     "mean_src": 0.07425693422555923,
+     "mean_tgt": 0.0,
+     "contribution": -0.06006550416350365
+    },
+    {
+     "term": "PaCO2 recently measured",
+     "weight": 0.2565290331840515,
+     "mean_src": 0.10981830209493637,
+     "mean_tgt": 0.3417784571647644,
+     "contribution": 0.05950451269745827
+    },
+    {
+     "term": "HospAdmTime is NORMAL",
+     "weight": -0.5549561977386475,
+     "mean_src": 0.4089345335960388,
+     "mean_tgt": 0.32381904125213623,
+     "contribution": 0.04723536968231201
+    },
+    {
+     "term": "Chloride recently measured",
+     "weight": -0.1256885826587677,
+     "mean_src": 0.024128330871462822,
+     "mean_tgt": 0.3784705400466919,
+     "contribution": -0.0445367731153965
+    },
+    {
+     "term": "SaO2 recently measured",
+     "weight": 0.4676264226436615,
+     "mean_src": 0.1008211076259613,
+     "mean_tgt": 0.19262374937534332,
+     "contribution": 0.04292934015393257
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.4401869773864746,
+     "mean_src": 0.19066540896892548,
+     "mean_tgt": 0.10919231921434402,
+     "contribution": 0.03586339205503464
+    },
+    {
+     "term": "HospAdmTime is HIGH",
+     "weight": 0.22985833883285522,
+     "mean_src": 0.3469926416873932,
+     "mean_tgt": 0.48674285411834717,
+     "contribution": 0.03212274983525276
+    },
+    {
+     "term": "Temp is HIGH (now)",
+     "weight": 0.5050212144851685,
+     "mean_src": 0.12229747325181961,
+     "mean_tgt": 0.15960626304149628,
+     "contribution": 0.018841730430722237
+    },
+    {
+     "term": "Temp is HIGH (rising)",
+     "weight": 0.5974193811416626,
+     "mean_src": 0.08834819495677948,
+     "mean_tgt": 0.11906787753105164,
+     "contribution": 0.018352534621953964
+    }
+   ],
+   "top20_by_importance": [
+    "ICULOS is NORMAL",
+    "HospAdmTime is NORMAL",
+    "Temp frequently measured",
+    "Temp is NORMAL (now)",
+    "BUN is LOW (rising)",
+    "ICULOS is HIGH",
+    "Resp frequently measured",
+    "WBC is NORMAL (now)",
+    "BUN is LOW (now)",
+    "HR is HIGH (now)",
+    "Glucose frequently measured",
+    "HospAdmTime is HIGH",
+    "HR is LOW (now)",
+    "Resp is NORMAL (now)",
+    "Resp is HIGH (now)",
+    "HospAdmTime is LOW",
+    "Temp is NORMAL (sustained)",
+    "Temp recently measured",
+    "Temp is HIGH (now)",
+    "EtCO2 recently measured"
+   ]
+  },
+  "4": {
+   "actual_mean_logit_change": 0.7257051467895508,
+   "decomposition_total": 0.7257051467895508,
+   "share_abs_contribution_measurement_terms": 0.6773342490196228,
+   "share_abs_contribution_measurement_top15": 0.7864841222763062,
+   "n_measurement_terms_in_top20": 4,
+   "n_nonzero_terms": 118,
+   "n_terms": 386,
+   "top_contributions": [
+    {
+     "term": "BaseExcess recently measured",
+     "weight": 0.7518692016601562,
+     "mean_src": 0.00872955285012722,
+     "mean_tgt": 0.41020652651786804,
+     "contribution": 0.30185818672180176
+    },
+    {
+     "term": "HCO3 recently measured",
+     "weight": -0.1568647027015686,
+     "mean_src": 0.010703951120376587,
+     "mean_tgt": 0.7028566598892212,
+     "contribution": -0.10857433080673218
+    },
+    {
+     "term": "PTT recently measured",
+     "weight": 0.2710673213005066,
+     "mean_src": 0.14795807003974915,
+     "mean_tgt": 0.5420932173728943,
+     "contribution": 0.10683716088533401
+    },
+    {
+     "term": "HospAdmTime is NORMAL",
+     "weight": -0.6923125982284546,
+     "mean_src": 0.431045800447464,
+     "mean_tgt": 0.3229773938655853,
+     "contribution": 0.07481712102890015
+    },
+    {
+     "term": "EtCO2 recently measured",
+     "weight": 0.793540358543396,
+     "mean_src": 0.07416068017482758,
+     "mean_tgt": 0.0,
+     "contribution": -0.05884949117898941
+    },
+    {
+     "term": "FiO2 recently measured",
+     "weight": 0.19279824197292328,
+     "mean_src": 0.12188497930765152,
+     "mean_tgt": 0.4156286120414734,
+     "contribution": 0.05663325637578964
+    },
+    {
+     "term": "HospAdmTime is HIGH",
+     "weight": 0.3208502233028412,
+     "mean_src": 0.3069930374622345,
+     "mean_tgt": 0.4712126553058624,
+     "contribution": 0.05268990248441696
+    },
+    {
+     "term": "pH recently measured",
+     "weight": 0.16777126491069794,
+     "mean_src": 0.10987760126590729,
+     "mean_tgt": 0.38156887888908386,
+     "contribution": 0.045581985265016556
+    },
+    {
+     "term": "PaCO2 recently measured",
+     "weight": 0.19861547648906708,
+     "mean_src": 0.10220422595739365,
+     "mean_tgt": 0.32568609714508057,
+     "contribution": 0.044386956840753555
+    },
+    {
+     "term": "SaO2 recently measured",
+     "weight": 0.4279259443283081,
+     "mean_src": 0.09671298414468765,
+     "mean_tgt": 0.18724839389324188,
+     "contribution": 0.03874244913458824
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.4598138630390167,
+     "mean_src": 0.19488871097564697,
+     "mean_tgt": 0.11125288903713226,
+     "contribution": 0.038456909358501434
+    },
+    {
+     "term": "pH is HIGH (rising)",
+     "weight": 0.6600017547607422,
+     "mean_src": 0.07070478796958923,
+     "mean_tgt": 0.12862566113471985,
+     "contribution": 0.038227878510951996
+    },
+    {
+     "term": "FiO2 is HIGH (rising)",
+     "weight": 0.4195132553577423,
+     "mean_src": 0.07608793675899506,
+     "mean_tgt": 0.16284184157848358,
+     "contribution": 0.03639441356062889
+    },
+    {
+     "term": "Chloride recently measured",
+     "weight": -0.07939042896032333,
+     "mean_src": 0.023612575605511665,
+     "mean_tgt": 0.37086495757102966,
+     "contribution": -0.0275685153901577
+    },
+    {
+     "term": "ICULOS is NORMAL",
+     "weight": -1.2438435554504395,
+     "mean_src": 0.6884306073188782,
+     "mean_tgt": 0.7065348029136658,
+     "contribution": -0.022518787533044815
+    }
+   ],
+   "top20_by_importance": [
+    "ICULOS is NORMAL",
+    "HospAdmTime is NORMAL",
+    "Temp frequently measured",
+    "Temp is NORMAL (now)",
+    "Temp is NORMAL (sustained)",
+    "WBC is NORMAL (now)",
+    "HR is LOW (now)",
+    "HospAdmTime is HIGH",
+    "BUN is HIGH (rising)",
+    "Resp frequently measured",
+    "Glucose frequently measured",
+    "BUN is HIGH (now)",
+    "HR is HIGH (now)",
+    "HospAdmTime is LOW",
+    "ICULOS is HIGH",
+    "Resp is HIGH (now)",
+    "EtCO2 recently measured",
+    "WBC is HIGH (rising)",
+    "Temp is HIGH (now)",
+    "Resp is NORMAL (now)"
+   ]
+  }
+ },
+ "top20_jaccard": [
+  0.6740364627321148,
+  0.48148148148148145,
+  0.8181818181818182
+ ]
+}

@@ -1,0 +1,23 @@
+[
+ {
+  "cfg": {
+   "C": 0.01
+  },
+  "val_logloss": 0.06512625515460968,
+  "best_iteration": null
+ },
+ {
+  "cfg": {
+   "C": 0.1
+  },
+  "val_logloss": 0.06524080038070679,
+  "best_iteration": null
+ },
+ {
+  "cfg": {
+   "C": 1.0
+  },
+  "val_logloss": 0.06523464620113373,
+  "best_iteration": null
+ }
+]

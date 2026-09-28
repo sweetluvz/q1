@@ -1,0 +1,699 @@
+{
+ "seeds": {
+  "0": {
+   "actual_mean_logit_change": -0.31252622604370117,
+   "decomposition_total": -0.31252625584602356,
+   "share_abs_contribution_measurement_terms": 0.6670719385147095,
+   "share_abs_contribution_measurement_top15": 0.9434401392936707,
+   "n_measurement_terms_in_top20": 12,
+   "n_nonzero_terms": 171,
+   "n_terms": 386,
+   "top_contributions": [
+    {
+     "term": "TroponinI recently measured",
+     "weight": -0.6036908030509949,
+     "mean_src": 0.017120957374572754,
+     "mean_tgt": 0.2498610019683838,
+     "contribution": -0.14050301909446716
+    },
+    {
+     "term": "FiO2 recently measured",
+     "weight": 0.48433855175971985,
+     "mean_src": 0.3610682487487793,
+     "mean_tgt": 0.09318574517965317,
+     "contribution": -0.12974582612514496
+    },
+    {
+     "term": "HCO3 recently measured",
+     "weight": -0.08171037584543228,
+     "mean_src": 0.7169510722160339,
+     "mean_tgt": 0.015134175308048725,
+     "contribution": 0.05734572559595108
+    },
+    {
+     "term": "Chloride recently measured",
+     "weight": -0.07605206966400146,
+     "mean_src": 0.6867786645889282,
+     "mean_tgt": 0.05380717292428017,
+     "contribution": 0.04813878983259201
+    },
+    {
+     "term": "Lactate recently measured",
+     "weight": 0.5047999024391174,
+     "mean_src": 0.27053195238113403,
+     "mean_tgt": 0.17736518383026123,
+     "contribution": -0.047030575573444366
+    },
+    {
+     "term": "FiO2 frequently measured",
+     "weight": 0.4535861313343048,
+     "mean_src": 0.12004251033067703,
+     "mean_tgt": 0.019765349105000496,
+     "contribution": -0.045484330505132675
+    },
+    {
+     "term": "Phosphate recently measured",
+     "weight": 0.2474605292081833,
+     "mean_src": 0.5197574496269226,
+     "mean_tgt": 0.35261309146881104,
+     "contribution": -0.04136162996292114
+    },
+    {
+     "term": "Hct recently measured",
+     "weight": -0.27318498492240906,
+     "mean_src": 0.7283530235290527,
+     "mean_tgt": 0.5925120115280151,
+     "contribution": 0.037109725177288055
+    },
+    {
+     "term": "Calcium recently measured",
+     "weight": 0.2732345163822174,
+     "mean_src": 0.5381810665130615,
+     "mean_tgt": 0.6448811292648315,
+     "contribution": 0.029154140502214432
+    },
+    {
+     "term": "DBP recently measured",
+     "weight": -0.0716279074549675,
+     "mean_src": 0.5491881370544434,
+     "mean_tgt": 0.9333901405334473,
+     "contribution": -0.02751958556473255
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.32387280464172363,
+     "mean_src": 0.09893674403429031,
+     "mean_tgt": 0.17537567019462585,
+     "contribution": -0.02475648932158947
+    },
+    {
+     "term": "HCO3 is NORMAL (now)",
+     "weight": -0.08280019462108612,
+     "mean_src": 0.5796418786048889,
+     "mean_tgt": 0.3110692799091339,
+     "contribution": 0.022237863391637802
+    },
+    {
+     "term": "Hgb recently measured",
+     "weight": -0.2309175431728363,
+     "mean_src": 0.7173271775245667,
+     "mean_tgt": 0.628424346446991,
+     "contribution": 0.02052922360599041
+    },
+    {
+     "term": "DBP frequently measured",
+     "weight": -0.06886240839958191,
+     "mean_src": 0.4228556156158447,
+     "mean_tgt": 0.6831332445144653,
+     "contribution": -0.017923343926668167
+    },
+    {
+     "term": "FiO2 is HIGH (rising)",
+     "weight": 0.2590944170951843,
+     "mean_src": 0.1378055214881897,
+     "mean_tgt": 0.06939269602298737,
+     "contribution": -0.0177253820002079
+    }
+   ],
+   "top20_by_importance": [
+    "ICULOS is NORMAL",
+    "SBP recently measured",
+    "SBP frequently measured",
+    "Hct recently measured",
+    "FiO2 recently measured",
+    "Hgb recently measured",
+    "Glucose recently measured",
+    "Calcium recently measured",
+    "Lactate recently measured",
+    "Phosphate recently measured",
+    "Temp frequently measured",
+    "SBP is NORMAL (now)",
+    "Platelets recently measured",
+    "Resp is HIGH (sustained)",
+    "Resp is HIGH (now)",
+    "ICULOS is HIGH",
+    "Temp is NORMAL (now)",
+    "WBC recently measured",
+    "HospAdmTime is HIGH",
+    "HospAdmTime is NORMAL"
+   ]
+  },
+  "1": {
+   "actual_mean_logit_change": -0.32605838775634766,
+   "decomposition_total": -0.326058566570282,
+   "share_abs_contribution_measurement_terms": 0.6706955432891846,
+   "share_abs_contribution_measurement_top15": 0.9019672870635986,
+   "n_measurement_terms_in_top20": 12,
+   "n_nonzero_terms": 194,
+   "n_terms": 386,
+   "top_contributions": [
+    {
+     "term": "TroponinI recently measured",
+     "weight": -0.5947381854057312,
+     "mean_src": 0.017065342515707016,
+     "mean_tgt": 0.24894355237483978,
+     "contribution": -0.13790681958198547
+    },
+    {
+     "term": "FiO2 recently measured",
+     "weight": 0.4720900058746338,
+     "mean_src": 0.3695821464061737,
+     "mean_tgt": 0.0981568768620491,
+     "contribution": -0.12813715636730194
+    },
+    {
+     "term": "HCO3 recently measured",
+     "weight": -0.08003776520490646,
+     "mean_src": 0.7100257873535156,
+     "mean_tgt": 0.014780214987695217,
+     "contribution": 0.055645901709795
+    },
+    {
+     "term": "Lactate recently measured",
+     "weight": 0.49562978744506836,
+     "mean_src": 0.27351343631744385,
+     "mean_tgt": 0.17962706089019775,
+     "contribution": -0.04653288424015045
+    },
+    {
+     "term": "Chloride recently measured",
+     "weight": -0.07344267517328262,
+     "mean_src": 0.6706758141517639,
+     "mean_tgt": 0.05171949788928032,
+     "contribution": 0.045457810163497925
+    },
+    {
+     "term": "FiO2 frequently measured",
+     "weight": 0.4343857765197754,
+     "mean_src": 0.12285450100898743,
+     "mean_tgt": 0.020129326730966568,
+     "contribution": -0.044622357934713364
+    },
+    {
+     "term": "Phosphate recently measured",
+     "weight": 0.24875085055828094,
+     "mean_src": 0.5158923864364624,
+     "mean_tgt": 0.3494655191898346,
+     "contribution": -0.041398823261260986
+    },
+    {
+     "term": "Hct recently measured",
+     "weight": -0.2559945583343506,
+     "mean_src": 0.7172579169273376,
+     "mean_tgt": 0.5803942084312439,
+     "contribution": 0.0350363664329052
+    },
+    {
+     "term": "Calcium recently measured",
+     "weight": 0.2667950391769409,
+     "mean_src": 0.5218913555145264,
+     "mean_tgt": 0.6267205476760864,
+     "contribution": 0.02796790935099125
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.33990278840065,
+     "mean_src": 0.09982415288686752,
+     "mean_tgt": 0.1770501434803009,
+     "contribution": -0.02624932862818241
+    },
+    {
+     "term": "FiO2 is LOW (rising)",
+     "weight": -0.4790719747543335,
+     "mean_src": 0.17726965248584747,
+     "mean_tgt": 0.12935271859169006,
+     "contribution": 0.02295565977692604
+    },
+    {
+     "term": "FiO2 is LOW (now)",
+     "weight": -0.14379213750362396,
+     "mean_src": 0.5085882544517517,
+     "mean_tgt": 0.6676766276359558,
+     "contribution": -0.022875657305121422
+    },
+    {
+     "term": "HCO3 is NORMAL (now)",
+     "weight": -0.08893969655036926,
+     "mean_src": 0.5680174231529236,
+     "mean_tgt": 0.3126407265663147,
+     "contribution": 0.022713126614689827
+    },
+    {
+     "term": "DBP recently measured",
+     "weight": -0.05695774033665657,
+     "mean_src": 0.5439967513084412,
+     "mean_tgt": 0.9259193539619446,
+     "contribution": -0.021753448992967606
+    },
+    {
+     "term": "Bilirubin_total recently measured",
+     "weight": 0.17454150319099426,
+     "mean_src": 0.2195558249950409,
+     "mean_tgt": 0.33383578062057495,
+     "contribution": 0.019946595653891563
+    }
+   ],
+   "top20_by_importance": [
+    "SBP frequently measured",
+    "SBP recently measured",
+    "Hct recently measured",
+    "FiO2 recently measured",
+    "ICULOS is HIGH",
+    "Hgb recently measured",
+    "Glucose recently measured",
+    "Calcium recently measured",
+    "Lactate recently measured",
+    "Phosphate recently measured",
+    "Temp frequently measured",
+    "Platelets recently measured",
+    "FiO2 is LOW (rising)",
+    "Resp is HIGH (sustained)",
+    "Temp is NORMAL (now)",
+    "FiO2 is LOW (now)",
+    "HospAdmTime is NORMAL",
+    "BUN recently measured",
+    "Resp is HIGH (now)",
+    "ICULOS is NORMAL"
+   ]
+  },
+  "2": {
+   "actual_mean_logit_change": -0.26925182342529297,
+   "decomposition_total": -0.2692520320415497,
+   "share_abs_contribution_measurement_terms": 0.6310988068580627,
+   "share_abs_contribution_measurement_top15": 0.9025143980979919,
+   "n_measurement_terms_in_top20": 14,
+   "n_nonzero_terms": 163,
+   "n_terms": 386,
+   "top_contributions": [
+    {
+     "term": "TroponinI recently measured",
+     "weight": -0.5779130458831787,
+     "mean_src": 0.017355618998408318,
+     "mean_tgt": 0.25375592708587646,
+     "contribution": -0.13661882281303406
+    },
+    {
+     "term": "FiO2 recently measured",
+     "weight": 0.4595879912376404,
+     "mean_src": 0.37665313482284546,
+     "mean_tgt": 0.1024651825428009,
+     "contribution": -0.12601348757743835
+    },
+    {
+     "term": "HCO3 recently measured",
+     "weight": -0.0834309533238411,
+     "mean_src": 0.7248432636260986,
+     "mean_tgt": 0.015555886551737785,
+     "contribution": 0.059176523238420486
+    },
+    {
+     "term": "Chloride recently measured",
+     "weight": -0.08135530352592468,
+     "mean_src": 0.6905278563499451,
+     "mean_tgt": 0.054307613521814346,
+     "contribution": 0.05175988748669624
+    },
+    {
+     "term": "Lactate recently measured",
+     "weight": 0.5191166400909424,
+     "mean_src": 0.26733916997909546,
+     "mean_tgt": 0.1749543994665146,
+     "contribution": -0.04795847088098526
+    },
+    {
+     "term": "Phosphate recently measured",
+     "weight": 0.25293657183647156,
+     "mean_src": 0.5307167172431946,
+     "mean_tgt": 0.36158958077430725,
+     "contribution": -0.042778439819812775
+    },
+    {
+     "term": "FiO2 frequently measured",
+     "weight": 0.38758647441864014,
+     "mean_src": 0.11803551763296127,
+     "mean_tgt": 0.0195015799254179,
+     "contribution": -0.03819042071700096
+    },
+    {
+     "term": "Hct recently measured",
+     "weight": -0.2756683826446533,
+     "mean_src": 0.7287933230400085,
+     "mean_tgt": 0.5929944515228271,
+     "contribution": 0.03743545711040497
+    },
+    {
+     "term": "DBP recently measured",
+     "weight": -0.07849816232919693,
+     "mean_src": 0.5455620288848877,
+     "mean_tgt": 0.9283409118652344,
+     "contribution": -0.03004743903875351
+    },
+    {
+     "term": "Calcium recently measured",
+     "weight": 0.27485060691833496,
+     "mean_src": 0.5406032204627991,
+     "mean_tgt": 0.6475734710693359,
+     "contribution": 0.029400838539004326
+    },
+    {
+     "term": "HCO3 is NORMAL (now)",
+     "weight": -0.08890951424837112,
+     "mean_src": 0.5967410802841187,
+     "mean_tgt": 0.2887333333492279,
+     "contribution": 0.027384819462895393
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.2999413311481476,
+     "mean_src": 0.09946070611476898,
+     "mean_tgt": 0.17636340856552124,
+     "contribution": -0.02306629903614521
+    },
+    {
+     "term": "FiO2 is LOW (now)",
+     "weight": -0.13300223648548126,
+     "mean_src": 0.4658814072608948,
+     "mean_tgt": 0.6338045001029968,
+     "contribution": -0.02233414724469185
+    },
+    {
+     "term": "Hgb recently measured",
+     "weight": -0.22649720311164856,
+     "mean_src": 0.7188976407051086,
+     "mean_tgt": 0.6299508213996887,
+     "contribution": 0.0201462060213089
+    },
+    {
+     "term": "ICULOS is NORMAL",
+     "weight": -0.706092894077301,
+     "mean_src": 0.5732361674308777,
+     "mean_tgt": 0.5453489422798157,
+     "contribution": 0.019690971821546555
+    }
+   ],
+   "top20_by_importance": [
+    "ICULOS is NORMAL",
+    "SBP recently measured",
+    "SBP frequently measured",
+    "Hct recently measured",
+    "FiO2 recently measured",
+    "Glucose recently measured",
+    "Hgb recently measured",
+    "Calcium recently measured",
+    "Lactate recently measured",
+    "Phosphate recently measured",
+    "Temp frequently measured",
+    "FiO2 is LOW (rising)",
+    "Resp is HIGH (sustained)",
+    "Platelets recently measured",
+    "ICULOS is HIGH",
+    "Temp recently measured",
+    "Resp frequently measured",
+    "Resp is HIGH (now)",
+    "Temp is NORMAL (now)",
+    "MAP frequently measured"
+   ]
+  },
+  "3": {
+   "actual_mean_logit_change": -0.26229333877563477,
+   "decomposition_total": -0.26229363679885864,
+   "share_abs_contribution_measurement_terms": 0.7212387323379517,
+   "share_abs_contribution_measurement_top15": 1.0,
+   "n_measurement_terms_in_top20": 14,
+   "n_nonzero_terms": 198,
+   "n_terms": 386,
+   "top_contributions": [
+    {
+     "term": "FiO2 recently measured",
+     "weight": 0.37526029348373413,
+     "mean_src": 0.374645859003067,
+     "mean_tgt": 0.10122543573379517,
+     "contribution": -0.10260383039712906
+    },
+    {
+     "term": "TroponinI recently measured",
+     "weight": -0.3738658130168915,
+     "mean_src": 0.016599230468273163,
+     "mean_tgt": 0.24133482575416565,
+     "contribution": -0.0840209499001503
+    },
+    {
+     "term": "HCO3 recently measured",
+     "weight": -0.06541342288255692,
+     "mean_src": 0.706779420375824,
+     "mean_tgt": 0.014619100838899612,
+     "contribution": 0.04527657479047775
+    },
+    {
+     "term": "BaseExcess recently measured",
+     "weight": 0.11379403620958328,
+     "mean_src": 0.36110925674438477,
+     "mean_tgt": 0.009514585137367249,
+     "contribution": -0.040009379386901855
+    },
+    {
+     "term": "Chloride recently measured",
+     "weight": -0.05980583280324936,
+     "mean_src": 0.6837706565856934,
+     "mean_tgt": 0.05340970680117607,
+     "contribution": 0.03769926354289055
+    },
+    {
+     "term": "FiO2 frequently measured",
+     "weight": 0.3545474112033844,
+     "mean_src": 0.12477027624845505,
+     "mean_tgt": 0.020373757928609848,
+     "contribution": -0.03701351583003998
+    },
+    {
+     "term": "Lactate recently measured",
+     "weight": 0.39215025305747986,
+     "mean_src": 0.2525354027748108,
+     "mean_tgt": 0.16391772031784058,
+     "contribution": -0.034751445055007935
+    },
+    {
+     "term": "DBP frequently measured",
+     "weight": -0.12858577072620392,
+     "mean_src": 0.410807341337204,
+     "mean_tgt": 0.6625930666923523,
+     "contribution": -0.032376062124967575
+    },
+    {
+     "term": "Phosphate recently measured",
+     "weight": 0.161506786942482,
+     "mean_src": 0.5054089426994324,
+     "mean_tgt": 0.34097495675086975,
+     "contribution": -0.026557205244898796
+    },
+    {
+     "term": "Hct recently measured",
+     "weight": -0.16676388680934906,
+     "mean_src": 0.7036849856376648,
+     "mean_tgt": 0.5656698942184448,
+     "contribution": 0.023015933111310005
+    },
+    {
+     "term": "PaCO2 recently measured",
+     "weight": 0.09840036928653717,
+     "mean_src": 0.3514651954174042,
+     "mean_tgt": 0.12456527352333069,
+     "contribution": -0.022327035665512085
+    },
+    {
+     "term": "pH recently measured",
+     "weight": 0.07912077754735947,
+     "mean_src": 0.3854253888130188,
+     "mean_tgt": 0.12286970764398575,
+     "contribution": -0.02077361010015011
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.2605190873146057,
+     "mean_src": 0.09814941138029099,
+     "mean_tgt": 0.17389637231826782,
+     "contribution": -0.019733529537916183
+    },
+    {
+     "term": "Calcium recently measured",
+     "weight": 0.1728047877550125,
+     "mean_src": 0.5121402740478516,
+     "mean_tgt": 0.615805447101593,
+     "contribution": 0.01791383884847164
+    },
+    {
+     "term": "Alkalinephos recently measured",
+     "weight": 0.1806076467037201,
+     "mean_src": 0.1966058760881424,
+     "mean_tgt": 0.2947218120098114,
+     "contribution": 0.01772048883140087
+    }
+   ],
+   "top20_by_importance": [
+    "SBP frequently measured",
+    "FiO2 recently measured",
+    "Hct recently measured",
+    "Hgb recently measured",
+    "SBP recently measured",
+    "Lactate recently measured",
+    "Calcium recently measured",
+    "Platelets recently measured",
+    "Glucose recently measured",
+    "Phosphate recently measured",
+    "Temp frequently measured",
+    "WBC recently measured",
+    "Temp is NORMAL (now)",
+    "Resp is HIGH (now)",
+    "Temp is HIGH (rising)",
+    "ICULOS is NORMAL",
+    "BUN recently measured",
+    "DBP frequently measured",
+    "HospAdmTime is NORMAL",
+    "HR is HIGH (now)"
+   ]
+  },
+  "4": {
+   "actual_mean_logit_change": -0.2536478042602539,
+   "decomposition_total": -0.25364792346954346,
+   "share_abs_contribution_measurement_terms": 0.6399621367454529,
+   "share_abs_contribution_measurement_top15": 0.904336154460907,
+   "n_measurement_terms_in_top20": 14,
+   "n_nonzero_terms": 169,
+   "n_terms": 386,
+   "top_contributions": [
+    {
+     "term": "FiO2 recently measured",
+     "weight": 0.49854978919029236,
+     "mean_src": 0.36818888783454895,
+     "mean_tgt": 0.09732728451490402,
+     "contribution": -0.13503798842430115
+    },
+    {
+     "term": "TroponinI recently measured",
+     "weight": -0.5710839033126831,
+     "mean_src": 0.017230728641152382,
+     "mean_tgt": 0.25167807936668396,
+     "contribution": -0.1338891088962555
+    },
+    {
+     "term": "HCO3 recently measured",
+     "weight": -0.08876533061265945,
+     "mean_src": 0.7230908274650574,
+     "mean_tgt": 0.015460468828678131,
+     "contribution": 0.06281304359436035
+    },
+    {
+     "term": "Chloride recently measured",
+     "weight": -0.0852137878537178,
+     "mean_src": 0.6803776621818542,
+     "mean_tgt": 0.052965570241212845,
+     "contribution": 0.05346415936946869
+    },
+    {
+     "term": "Lactate recently measured",
+     "weight": 0.5108798146247864,
+     "mean_src": 0.26235225796699524,
+     "mean_tgt": 0.17121142148971558,
+     "contribution": -0.046562012284994125
+    },
+    {
+     "term": "Phosphate recently measured",
+     "weight": 0.25766053795814514,
+     "mean_src": 0.5374422073364258,
+     "mean_tgt": 0.3671366572380066,
+     "contribution": -0.043881021440029144
+    },
+    {
+     "term": "FiO2 frequently measured",
+     "weight": 0.4128786325454712,
+     "mean_src": 0.1170145720243454,
+     "mean_tgt": 0.019366111606359482,
+     "contribution": -0.04031696170568466
+    },
+    {
+     "term": "Hct recently measured",
+     "weight": -0.2776719927787781,
+     "mean_src": 0.7275199890136719,
+     "mean_tgt": 0.591599702835083,
+     "contribution": 0.03774125501513481
+    },
+    {
+     "term": "Calcium recently measured",
+     "weight": 0.2844226062297821,
+     "mean_src": 0.5422803163528442,
+     "mean_tgt": 0.6494364738464355,
+     "contribution": 0.030477633699774742
+    },
+    {
+     "term": "HCO3 is NORMAL (now)",
+     "weight": -0.09806542843580246,
+     "mean_src": 0.5976714491844177,
+     "mean_tgt": 0.30734607577323914,
+     "contribution": 0.028470881283283234
+    },
+    {
+     "term": "DBP recently measured",
+     "weight": -0.07375171035528183,
+     "mean_src": 0.5473954677581787,
+     "mean_tgt": 0.9309877157211304,
+     "contribution": -0.028290584683418274
+    },
+    {
+     "term": "Glucose frequently measured",
+     "weight": -0.29657596349716187,
+     "mean_src": 0.09972076117992401,
+     "mean_tgt": 0.17685465514659882,
+     "contribution": -0.022876059636473656
+    },
+    {
+     "term": "ICULOS is NORMAL",
+     "weight": -0.7875040769577026,
+     "mean_src": 0.5587656497955322,
+     "mean_tgt": 0.5309455990791321,
+     "contribution": 0.02190840244293213
+    },
+    {
+     "term": "Hgb recently measured",
+     "weight": -0.22677099704742432,
+     "mean_src": 0.714741587638855,
+     "mean_tgt": 0.6259124279022217,
+     "contribution": 0.02014387771487236
+    },
+    {
+     "term": "FiO2 is LOW (now)",
+     "weight": -0.12389583140611649,
+     "mean_src": 0.4935534596443176,
+     "mean_tgt": 0.6465944051742554,
+     "contribution": -0.018961135298013687
+    }
+   ],
+   "top20_by_importance": [
+    "ICULOS is NORMAL",
+    "SBP recently measured",
+    "SBP frequently measured",
+    "Hct recently measured",
+    "FiO2 recently measured",
+    "Glucose recently measured",
+    "Hgb recently measured",
+    "Calcium recently measured",
+    "Phosphate recently measured",
+    "Lactate recently measured",
+    "Temp frequently measured",
+    "HospAdmTime is NORMAL",
+    "Resp is HIGH (sustained)",
+    "FiO2 is LOW (rising)",
+    "Resp frequently measured",
+    "Platelets recently measured",
+    "Temp recently measured",
+    "MAP frequently measured",
+    "ICULOS is HIGH",
+    "Temp is NORMAL (now)"
+   ]
+  }
+ },
+ "top20_jaccard": [
+  0.6865742952699474,
+  0.5384615384615384,
+  0.9047619047619048
+ ]
+}
