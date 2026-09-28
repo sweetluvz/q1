@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 
 from staf.calibration import (calibration_stats, density_ratio, em_prior_shift, fit_temperature,  # noqa: E402
                               mondrian_sets, set_report)
-from staf.data import load_site, patient_split, row_index  # noqa: E402
+from staf.data import RAW_DIR, load_site, patient_split, row_index  # noqa: E402
 from staf.metrics import best_threshold, bootstrap_patients, normalized_utility, summarize  # noqa: E402
 from sklearn.metrics import average_precision_score, roc_auc_score  # noqa: E402
 
@@ -37,7 +37,7 @@ def load_direction(d):
 def domain_weights(src, tgt):
     """Density ratio p_B(x)/p_A(x) on engineered features; target-train rows are used unlabeled."""
     import lightgbm as lgb
-    ss, ts = patient_split(src_site := load_site("data/raw", src), 0), patient_split(tgt_site := load_site("data/raw", tgt), 0)
+    ss, ts = patient_split(src_site := load_site(RAW_DIR, src), 0), patient_split(tgt_site := load_site(RAW_DIR, tgt), 0)
     Fs = np.load(f"data/processed/site{src}_feat.npz")["F"]
     Ft = np.load(f"data/processed/site{tgt}_feat.npz")["F"]
     usable = ~np.all(np.isnan(Fs[row_index(src_site["offsets"], ss["train"])]), axis=0)

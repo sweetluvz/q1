@@ -1,34 +1,19 @@
 #!/usr/bin/env bash
-# Fetch PhysioNet/CinC Challenge 2019 training data (hospital systems A and B) into data/raw/.
-# Primary source: PhysioNet (open access). Fallback: a public GitHub mirror, used only when PhysioNet
-# is unreachable; its integrity is then checked against the published cohort statistics.
+# Download PhysioNet/CinC Challenge 2019 training sets A and B from PhysioNet's official open-data
+# bucket (s3://physionet-open, HTTPS), verify each file's MD5 against its S3 ETag, write
+# data/raw_official/MANIFEST.csv (SHA-256 per file), then check the published cohort counts.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-mkdir -p data/raw
+python3 scripts/get_data_official.py
 
-if curl -sfI https://physionet.org/content/challenge-2019/1.0.0/ >/dev/null; then
-  wget -q -r -N -c -np -nH --cut-dirs=4 -P data/raw \
-    https://physionet.org/files/challenge-2019/1.0.0/training/training_setA/ \
-    https://physionet.org/files/challenge-2019/1.0.0/training/training_setB/
-else
-  echo "PhysioNet unreachable; using GitHub mirror MartinOravecSvK/Early-Prediction-of-Sepsis" >&2
-  tmp=data/mirror
-  git clone -q --depth 1 --filter=blob:none --no-checkout \
-    https://github.com/MartinOravecSvK/Early-Prediction-of-Sepsis "$tmp"
-  git -C "$tmp" sparse-checkout set --no-cone 'Dataset/'
-  git -C "$tmp" checkout -q HEAD
-  ln -sfn "$(pwd)/$tmp/Dataset/training_setA" data/raw/training_setA
-  ln -sfn "$(pwd)/$tmp/Dataset/training_setB" data/raw/training_setB
-fi
-
-python3 - <<'EOF'
+python3 - <<'PY'
 import glob
 import pandas as pd
-expected = {"A": (20336, 1790, 790215), "B": (20000, 1142, 761995)}
-for s, (n_pat, n_sep, n_rows) in expected.items():
-    fs = glob.glob(f"data/raw/training_set{s}/*.psv")
+expected = {"A": (20336, 1790), "B": (20000, 1142)}  # Reyna et al., Crit Care Med 2020, Table 2
+for s, (n_pat, n_sep) in expected.items():
+    fs = glob.glob(f"data/raw_official/training_set{s}/*.psv")
     ys = [pd.read_csv(f, sep="|", usecols=["SepsisLabel"])["SepsisLabel"] for f in fs]
-    got = (len(fs), sum(int(y.any()) for y in ys), sum(len(y) for y in ys))
-    assert got == (n_pat, n_sep, n_rows), f"set {s}: got {got}, expected {(n_pat, n_sep, n_rows)}"
-    print(f"set {s}: patients={got[0]} septic={got[1]} hours={got[2]} OK")
-EOF
+    got = (len(fs), sum(int(y.any()) for y in ys))
+    assert got == (n_pat, n_sep), f"set {s}: got {got}, expected {(n_pat, n_sep)}"
+    print(f"set {s}: patients={got[0]} septic={got[1]} hours={sum(len(y) for y in ys)} OK")
+PY

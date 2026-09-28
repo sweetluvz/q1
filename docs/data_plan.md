@@ -20,11 +20,20 @@
 
 ### Cách dữ liệu được lấy trong môi trường này
 
-- PhysioNet bị chặn bởi chính sách mạng của môi trường chạy (proxy trả 403). Dữ liệu được lấy từ mirror công khai trên GitHub `MartinOravecSvK/Early-Prediction-of-Sepsis` (thư mục `Dataset/`, 40.336 file `.psv`). Script `scripts/get_data.sh` ưu tiên PhysioNet và chỉ dùng mirror khi PhysioNet không truy cập được.
-- **Kiểm tra toàn vẹn** (không có SHA256 chính thức để đối chiếu):
-  - Số bệnh nhân và số ca sepsis khớp chính xác với Bảng 2 của Reyna et al. (2020): A 20.336 / 1.790 (8,8%), B 20.000 / 1.142 (5,7%).
-  - Tổng số giờ 1.552.210 khớp với số được báo cáo trong các bài CinC 2019 dùng bản public (ví dụ bài Ring-Topology ESN, CinC2019-327).
-  - **Chưa khớp:** Bảng 2 của bản thảo ghi số dòng A = 739.663, B = 684.508, còn mirror có 790.215 và 761.995. [Chưa xác minh] nguyên nhân (có thể bảng đếm theo định nghĩa khác). **Việc cần làm trước khi nộp bài:** tải lại từ PhysioNet trên máy có mạng và so khớp checksum với `SHA256SUMS.txt` của PhysioNet.
+- **Nguồn chính thức:** PhysioNet Challenge 2019 v1.0.0, tải từ bucket open-data chính thức của PhysioNet trên AWS (`s3://physionet-open/challenge-2019/1.0.0/training/`, truy cập qua HTTPS). Script: `scripts/get_data.sh` → `scripts/get_data_official.py`. License: **Open Database License (ODbL) v1.0** (file `LICENSE.txt` trong cùng thư mục).
+- **Xác minh từng file:** MD5 của cả 40.336 file `.psv` khớp ETag do S3 cung cấp (không có object multipart nên không có file nào bị bỏ qua). SHA-256 từng file được lưu ở `data/raw_official/MANIFEST.csv`. Dấu vân tay toàn bộ tập (SHA-256 của chuỗi SHA-256 các file theo thứ tự đường dẫn): `6906699934221bef295d20e510396152d09cb4a6272ba2b5ceaed59b523a37d6`.
+- **Đối chiếu với bài công bố** (Reyna et al., *Crit. Care Med.* 2020, Bảng 2) — khớp chính xác mọi con số:
+
+  | | Bài gốc A | Dữ liệu A | Bài gốc B | Dữ liệu B |
+  |---|---|---|---|---|
+  | Bệnh nhân | 20.336 | 20.336 | 20.000 | 20.000 |
+  | Ca sepsis | 1.790 | 1.790 | 1.142 | 1.142 |
+  | "Number of rows" (giờ có ≥ 1 phép đo động) | 739.663 | 739.663 | 684.508 | 684.508 |
+  | "Number of entries" (giá trị động không thiếu) | 5.536.849 | 5.536.849 | 4.950.064 | 4.950.064 |
+
+  Tổng số giờ trong file (kể cả giờ không có phép đo nào) là 790.215 và 761.995, tổng 1.552.210, khớp với các bài CinC 2019 dùng bản public.
+- *Lịch sử:* các kết quả đầu tiên của project được chạy trên một mirror GitHub (`MartinOravecSvK/Early-Prediction-of-Sepsis`) khi PhysioNet chưa truy cập được. Sau đó đã xác minh **40.336/40.336 file giống hệt từng byte** với bản chính thức (so SHA-256), nên mọi kết quả đều tương ứng với dữ liệu chính thức. Từ commit này pipeline chỉ đọc `data/raw_official/`.
+- **Trích dẫn bắt buộc khi công bố:** Reyna MA et al., *Crit Care Med* 2020;48(2):210–217; và PhysioNet (Goldberger AL et al., *Circulation* 2000;101(23):e215–e220).
 
 ## 3. Kiểm toán dữ liệu (`experiments/data_audit.py` → `results/data_audit.json`)
 
@@ -57,6 +66,5 @@
 
 ## 6. Rủi ro đã biết
 
-- Mirror GitHub chưa kiểm được checksum (mục 2).
 - Hai hệ thống A/B là dữ liệu public đã được dùng rộng rãi từ 2019; một bài Q1 chỉ dựa trên A↔B sẽ bị reviewer hỏi về ngoại kiểm độc lập → Giai đoạn 2 gần như bắt buộc.
 - Nhãn Sepsis-3 dựa vào kháng sinh/cấy máu nên phụ thuộc thực hành lâm sàng của từng bệnh viện — chính shift quy trình ở mục 3 cũng ảnh hưởng tới nhãn, không chỉ tới đầu vào.

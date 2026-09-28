@@ -6,13 +6,13 @@ import sys
 import numpy as np
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
-from staf.data import DYNAMIC, load_site  # noqa: E402
+from staf.data import DYNAMIC, RAW_DIR, load_site  # noqa: E402
 
 
 def main():
     out = {}
     for s in "AB":
-        d = load_site("data/raw", s)
+        d = load_site(RAW_DIR, s)
         off, y, X = d["offsets"], d["y"], d["X"]
         lens = np.diff(off)
         septic = np.array([y[a:b].any() for a, b in zip(off[:-1], off[1:])])

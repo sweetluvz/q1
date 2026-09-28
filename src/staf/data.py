@@ -13,6 +13,7 @@ LABS = ["BaseExcess", "HCO3", "FiO2", "pH", "PaCO2", "SaO2", "AST", "BUN", "Alka
 DYNAMIC = VITALS + LABS
 STATIC = ["Age", "Gender", "HospAdmTime"]
 NEVER_SEEN = 1e3
+RAW_DIR = "data/raw_official"
 
 
 def _read(path):

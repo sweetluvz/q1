@@ -15,13 +15,13 @@ import torch
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
 warnings.filterwarnings("ignore")
 
-from staf.data import DYNAMIC, STATIC, Normalizer, ffill_and_delta, load_site, patient_split, row_index, subset  # noqa: E402
+from staf.data import DYNAMIC, RAW_DIR, STATIC, Normalizer, ffill_and_delta, load_site, patient_split, row_index, subset  # noqa: E402
 from staf.features import engineered  # noqa: E402
 from staf.interpret import fuzzy_sets_original_units  # noqa: E402
 from staf.model import STAF, GRUBaseline, init_from_data  # noqa: E402
 from staf.train import fit, nn_inputs, predict_logits  # noqa: E402
 
-RAW, OUT = "data/raw", os.environ.get("RESULTS_DIR", "results")
+RAW, OUT = RAW_DIR, os.environ.get("RESULTS_DIR", "results")
 NN_CFG = {
     "staf": dict(kind="staf", kw=dict(), lr=1e-2),
     "staf_h": dict(kind="staf", kw=dict(hybrid_hidden=64), lr=3e-3),
