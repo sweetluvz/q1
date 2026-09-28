@@ -1,5 +1,7 @@
 # Kết quả và đánh giá khả năng publish
 
+> **Lưu ý:** tài liệu này là **giai đoạn thăm dò**. Kết quả dùng cho bài báo là **giai đoạn khẳng định** theo `docs/analysis_plan.md`: số liệu ở `results_confirm/summary.json`, bảng ở `docs/manuscript_tables.md`, bản thảo ở `docs/manuscript.md`.
+
 Mọi số liệu dưới đây được sinh tự động từ `results/summary.json` (`experiments/make_tables.py`) và `results/*/staf_analysis.json`. Dữ liệu: PhysioNet/CinC 2019, hai hệ thống bệnh viện A và B (xem `docs/data_plan.md`). Mỗi mô hình mạng chạy 3 seed; "±" là độ lệch chuẩn giữa các seed.
 
 ## 1. Tóm tắt (nói thẳng)

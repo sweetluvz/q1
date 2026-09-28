@@ -4,7 +4,8 @@ Project nghiên cứu (hướng A): mô hình fuzzy-neural diễn giải đượ
 
 - Kế hoạch & kiểm toán dữ liệu: [`docs/data_plan.md`](docs/data_plan.md)
 - Phương pháp: [`docs/methodology.md`](docs/methodology.md)
-- Kết quả & đánh giá khả năng publish: [`docs/results.md`](docs/results.md)
+- Kết quả giai đoạn thăm dò: [`docs/results.md`](docs/results.md)
+- **Kế hoạch phân tích khẳng định:** [`docs/analysis_plan.md`](docs/analysis_plan.md) · **Bản thảo (EN):** [`docs/manuscript.md`](docs/manuscript.md) · Bảng: [`docs/manuscript_tables.md`](docs/manuscript_tables.md) · TRIPOD+AI: [`docs/tripod_ai_checklist.md`](docs/tripod_ai_checklist.md)
 
 ## Cấu trúc
 
@@ -23,7 +24,7 @@ docs/figures/      hình cho bài báo
 
 ```bash
 pip install -r requirements.txt
-bash scripts/get_data.sh                       # PhysioNet, fallback mirror GitHub; tự kiểm tra số bệnh nhân/ca sepsis/số giờ
+bash scripts/get_data.sh                       # bản chính thức từ s3://physionet-open, kiểm MD5 từng file, ghi SHA-256 manifest
 python -m pytest -q tests/
 python experiments/data_audit.py
 python experiments/run.py --src A --tgt B      # 9 mô hình × 3 seed
@@ -33,6 +34,19 @@ python experiments/run.py --src B --tgt A --models lgbm_noproc
 python experiments/evaluate.py                 # -> results/summary.json
 python experiments/analyze_staf.py             # -> results/*/staf_analysis.json
 python experiments/figures.py                  # -> docs/figures/*.png
+```
+
+Giai đoạn khẳng định (theo `docs/analysis_plan.md`, ~8–10 giờ CPU):
+
+```bash
+python experiments/confirm.py --src A --tgt B   # 4 lớp × {FULL, PF}, tuning theo log-loss, 5 seed
+python experiments/confirm.py --src B --tgt A
+python experiments/confirm.py --src A --tgt B --no-iculos --seeds 0   # S2
+python experiments/confirm.py --src B --tgt A --no-iculos --seeds 0
+python experiments/evaluate_confirm.py          # -> results_confirm/summary.json (bootstrap 1000, Holm)
+python experiments/analyze_confirm_fs.py        # phân rã shift của scorecard mờ
+python experiments/subgroups_confirm.py
+python experiments/make_confirm_tables.py       # -> docs/manuscript_tables.md, docs/figures/confirm_*.png
 ```
 
 Không cần GPU. Mọi lựa chọn (epoch, ngưỡng utility, nhiệt độ, tập hiệu chỉnh conformal) chỉ dùng dữ liệu của bệnh viện nguồn; bệnh viện đích chỉ dùng để báo cáo (trừ phân tích few-shot, nơi số bệnh nhân có nhãn của bệnh viện đích được nêu rõ).
