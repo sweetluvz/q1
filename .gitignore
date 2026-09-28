@@ -5,3 +5,6 @@ __pycache__/
 results/*/*.npz
 results/*/*.pt
 results/logs/
+results_confirm*/*/*.npz
+results_confirm*/*/*.pt
+results_confirm*/logs/

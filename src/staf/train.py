@@ -55,13 +55,19 @@ def predict_logits(model, inp, batch_size=256):
     return out
 
 
+def val_logloss(y, logit):
+    return float(F.binary_cross_entropy_with_logits(torch.from_numpy(logit), torch.from_numpy(y)).item())
+
+
 def fit(model, tr, va, epochs=25, lr=1e-2, reg=1e-4, batch_size=32, patience=4, seed=0, max_len=None,
-        log=print):
+        criterion="auprc", log=print):
+    """Train with early stopping on validation AUPRC (higher is better) or log-loss (lower is better)."""
     torch.manual_seed(seed)
     rng = np.random.default_rng(seed)
     opt = torch.optim.Adam(model.parameters(), lr=lr)
     sched = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=epochs)
-    best, best_state, bad = -1.0, None, 0
+    sign = -1.0 if criterion == "logloss" else 1.0
+    best, best_state, bad = -np.inf, None, 0
     for ep in range(epochs):
         model.train()
         t0, tot, n = time.time(), 0.0, 0
@@ -76,13 +82,13 @@ def fit(model, tr, va, epochs=25, lr=1e-2, reg=1e-4, batch_size=32, patience=4, 
             tot += loss.item() * mask.sum().item(); n += mask.sum().item()
         sched.step()
         p = predict_logits(model, va)
-        ap = average_precision_score(va["y"], p)
-        log(f"  ep {ep:02d} loss {tot / n:.4f} val_AUPRC {ap:.4f} ({time.time() - t0:.0f}s)")
-        if ap > best:
-            best, best_state, bad = ap, copy.deepcopy(model.state_dict()), 0
+        score = val_logloss(va["y"], p) if criterion == "logloss" else average_precision_score(va["y"], p)
+        log(f"  ep {ep:02d} loss {tot / n:.4f} val_{criterion} {score:.5f} ({time.time() - t0:.0f}s)")
+        if sign * score > best:
+            best, best_state, bad = sign * score, copy.deepcopy(model.state_dict()), 0
         else:
             bad += 1
             if bad >= patience:
                 break
     model.load_state_dict(best_state)
-    return model, best
+    return model, sign * best

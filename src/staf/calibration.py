@@ -102,3 +102,62 @@ def density_ratio(clf_fit, X_src, X_tgt, X_eval_list, clip=(0.05, 20.0)):
         pr = np.clip(clf.predict_proba(Xe)[:, 1], 1e-6, 1 - 1e-6)
         out.append(np.clip(pr / (1 - pr) * prior, *clip))
     return out, clf
+
+
+def bbse_prior(p_src, y_src, p_tgt, prior_src_quantile=None):
+    """Black-box shift estimation (Lipton et al., 2018) for a binary label.
+
+    Hard predictions flag the top prevalence-fraction of source scores as positive; solving
+    C w = mu_t (C = source joint of prediction and label) gives importance weights w and the
+    target prevalence w_1 * pi_s.
+    """
+    pi_s = float(y_src.mean())
+    thr = np.quantile(p_src, 1 - pi_s) if prior_src_quantile is None else prior_src_quantile
+    yh_s, yh_t = p_src >= thr, p_tgt >= thr
+    C = np.array([[np.mean(~yh_s & (y_src == 0)), np.mean(~yh_s & (y_src == 1))],
+                  [np.mean(yh_s & (y_src == 0)), np.mean(yh_s & (y_src == 1))]])
+    mu = np.array([np.mean(~yh_t), np.mean(yh_t)])
+    w = np.clip(np.linalg.solve(C, mu), 0, None)
+    return float(np.clip(w[1] * pi_s, 0, 1))
+
+
+def _one_row_per_patient(rows, patient, rng):
+    """Uniformly pick one of the given rows for each patient that has any."""
+    if len(rows) == 0:
+        return rows
+    pat = patient[rows]
+    order = np.lexsort((rng.random(len(rows)), pat))
+    last = np.r_[pat[order][1:] != pat[order][:-1], True]
+    return rows[order][last]
+
+
+def patient_mondrian(p_cal, y_cal, off_cal, p_test, y_test, off_test, alpha=0.1, draws=200, seed=0):
+    """Class-conditional split conformal with one uniformly drawn hour per patient and class.
+
+    Calibration units (patients) are exchangeable, so the finite-sample guarantee applies to a
+    uniformly drawn hour of a new patient from the same distribution. Test coverage and the rate
+    of ambiguous {0,1} sets are averaged over `draws` random hour draws per test patient.
+    """
+    rng = np.random.default_rng(seed)
+    pat_c = np.repeat(np.arange(len(off_cal) - 1), np.diff(off_cal))
+    pat_t = np.repeat(np.arange(len(off_test) - 1), np.diff(off_test))
+    q, n_units = {}, {}
+    for c in (0, 1):
+        r = _one_row_per_patient(np.flatnonzero(y_cal == c), pat_c, rng)
+        n_units[c] = len(r)
+        sc = np.sort(1 - p_cal[r] if c == 1 else p_cal[r])
+        rank = int(np.ceil((len(sc) + 1) * (1 - alpha)))
+        q[c] = np.inf if rank > len(sc) else sc[rank - 1]
+    in1 = (1 - p_test) <= q[1]
+    in0 = p_test <= q[0]
+    cov = {0: [], 1: []}
+    amb = []
+    for _ in range(draws):
+        for c in (0, 1):
+            r = _one_row_per_patient(np.flatnonzero(y_test == c), pat_t, rng)
+            cov[c].append((in1 if c == 1 else in0)[r].mean())
+        r = _one_row_per_patient(np.arange(len(p_test)), pat_t, rng)
+        amb.append((in0 & in1)[r].mean())
+    return dict(coverage_pos=float(np.mean(cov[1])), coverage_neg=float(np.mean(cov[0])),
+                ambiguous_rate=float(np.mean(amb)), n_cal_pos=n_units[1], n_cal_neg=n_units[0],
+                q_pos=float(q[1]), q_neg=float(q[0]))

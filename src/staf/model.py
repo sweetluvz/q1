@@ -121,7 +121,8 @@ class STAF(nn.Module):
         return logit
 
     def penalty(self):
-        return self.antecedents().sum(-1).mean() + self.v.abs().sum()
+        rules = self.antecedents().sum(-1).mean() if self.W.shape[0] else 0.0
+        return rules + self.v.abs().sum()
 
 
 class GRUBaseline(nn.Module):
