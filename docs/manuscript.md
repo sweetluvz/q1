@@ -8,7 +8,7 @@
 
 ## 1. Introduction
 
-Hourly sepsis early-warning models are typically developed on electronic health record (EHR) data from one institution and deployed at others. EHR data record not only patient physiology but also the care process that generated them: whether, when and how often a variable was measured. In a two-hospital Boston cohort, the timing of laboratory test orders predicted survival more accurately than the test results for 118 of 174 test types (Agniel et al., 2018). Such observation-process signals are, by construction, tied to local workflows. The PhysioNet/Computing in Cardiology Challenge 2019 showed that algorithms predicting sepsis hours before clinical recognition generalized poorly to a hospital system unseen during development (Reyna et al., 2020). Recent work found that adding measurement counts to sepsis *mortality* models enlarged the performance drop between MIMIC-IV and eICU-CRD (medRxiv preprint, 2026). Whether the same holds for *hourly early-warning* models has not been quantified, and neither has its consequence for decision thresholds and distribution-free uncertainty sets. In early-warning models, process features vary within a stay and are updated every hour.
+Hourly sepsis early-warning models are typically developed on electronic health record (EHR) data from one institution and deployed at others. EHR data record not only patient physiology but also the care process that generated them: whether, when and how often a variable was measured. In a two-hospital Boston cohort, the timing of laboratory test orders predicted survival more accurately than the test results for 118 of 174 test types (Agniel et al., 2018). Such observation-process signals are, by construction, tied to local workflows. The PhysioNet/Computing in Cardiology Challenge 2019 showed that algorithms predicting sepsis hours before clinical recognition generalized poorly to a hospital system unseen during development (Reyna et al., 2020). Recent work found that adding measurement counts to sepsis *mortality* models enlarged the performance drop between MIMIC-IV and eICU-CRD (Yamamoto et al., 2026, preprint). Whether the same holds for *hourly early-warning* models has not been quantified, and neither has its consequence for decision thresholds and distribution-free uncertainty sets. In early-warning models, process features vary within a stay and are updated every hour.
 
 We ask whether observation-process features improve within-hospital discrimination at the cost of cross-hospital transportability. We compare four model classes with and without process features, in both transfer directions between the two public hospital systems of the Challenge. Each transfer is evaluated against a model trained at the target hospital on the same patients.
 
@@ -65,4 +65,18 @@ Python 3.11, PyTorch 2.14, LightGBM 4.7 and scikit-learn 1.9; CPU only. The util
 *(after results)*
 
 ## References
-*(to be completed; each entry verified before inclusion)*
+*Each entry below was checked against an online bibliographic record during drafting. Entries marked [authors TBD] still need the author list.*
+
+1. Agniel D, Kohane IS, Weber GM. Biases in electronic health record data due to processes within the healthcare system: retrospective observational study. *BMJ* 2018;361:k1479.
+2. Angelopoulos AN, Bates S. A gentle introduction to conformal prediction and distribution-free uncertainty quantification. arXiv:2107.07511, 2021.
+3. Che Z, Purushotham S, Cho K, Sontag D, Liu Y. Recurrent neural networks for multivariate time series with missing values. *Sci Rep* 2018;8:6085.
+4. Collins GS, Moons KGM, Dhiman P, et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. *BMJ* 2024;385:e078378.
+5. Goldberger AL, Amaral LAN, Glass L, et al. PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex physiologic signals. *Circulation* 2000;101(23):e215–e220.
+6. Ke G, Meng Q, Finley T, et al. LightGBM: a highly efficient gradient boosting decision tree. *Advances in Neural Information Processing Systems 30* (NIPS 2017), 3146–3154.
+7. [authors TBD]. Leakage-aware federated learning for ICU sepsis early warning: fixed alert-rate evaluation on PhysioNet/CinC 2019 and MIMIC-IV. *Appl Sci* 2026;16(6):2735. doi:10.3390/app16062735.
+8. Lipton ZC, Wang Y-X, Smola A. Detecting and correcting for label shift with black box predictors. *Proceedings of the 35th International Conference on Machine Learning*, PMLR 80:3122–3130, 2018.
+9. Reyna MA, Josef CS, Jeter R, et al. Early prediction of sepsis from clinical data: the PhysioNet/Computing in Cardiology Challenge 2019. *Crit Care Med* 2020;48(2):210–217.
+10. Riley RD, Debray TPA, Collins GS, et al. Minimum sample size for external validation of a clinical prediction model with a binary outcome. *Stat Med* 2021;40(19):4230–4251.
+11. Saerens M, Latinne P, Decaestecker C. Adjusting the outputs of a classifier to new a priori probabilities: a simple procedure. *Neural Comput* 2002;14(1):21–41.
+12. Van Calster B, McLernon DJ, van Smeden M, Wynants L, Steyerberg EW. Calibration: the Achilles heel of predictive analytics. *BMC Med* 2019;17:230.
+13. Yamamoto R, Wu F, Sprehe LK, Abeer A, Celi LA, Tohya T. Observation-process features are associated with larger domain shift in sepsis mortality prediction: a cross-database evaluation using MIMIC-IV and eICU-CRD. medRxiv 2026. doi:10.64898/2026.04.05.26350209 (preprint, not peer reviewed).
